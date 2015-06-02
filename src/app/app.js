@@ -10,5 +10,4 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
       });
 
     $urlRouterProvider.otherwise('/');
-  })
-;
+  });
