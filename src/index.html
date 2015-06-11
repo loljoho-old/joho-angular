@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="johoApp">
+<html ng-app="johoApp" ng-controller="View as vm">
   <head>
     <meta charset="utf-8">
     <title>johoApp</title>
@@ -20,12 +20,18 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body>
+  <body layout-fill layout="column">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ui-view></div>
+    <header ng-include="'app/components/header/header.html'"></header>
+
+    <md-content layout-fill>
+    </md-content>
+
+    <footer ng-include="'app/components/footer/footer.html'"></footer>
+  
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

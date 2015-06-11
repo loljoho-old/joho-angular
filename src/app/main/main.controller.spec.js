@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 describe('controllers', function(){
@@ -20,3 +21,4 @@ describe('controllers', function(){
     expect(scope.awesomeThings.length > 5).toBeTruthy();
   }));
 });
+*/

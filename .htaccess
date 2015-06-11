@@ -1,0 +1,13 @@
+# Apache Server Configuration v0.1.0
+# 
+# @file   .htaccess
+# @path   www/
+#
+
+# RewriteEngine On
+
+
+RewriteCond %{HTTP_HOST} ^poppy\.gq$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.poppy\.gq$
+RewriteCond %{REQUEST_URI} !^/stream/
+RewriteRule (.*) /stream/$1
