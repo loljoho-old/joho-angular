@@ -29,10 +29,17 @@
             ng-include="'app/components/header/header.html'">
     </header>
 
-    <md-content role="main" flex md-scroll-y layout-padding>
-      <div ui-view></div>
-    </md-content>
+    <md-content role="main" 
+                md-scroll-y 
+                layout-padding 
+                flex
+                layout="row">
+  
+      <div layout-fill
+           ui-view>
+      </div>
 
+    </md-content>
 
     <footer ng-controller="Footer as fm"
             ng-include="'app/components/footer/footer.html'">

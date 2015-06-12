@@ -1,0 +1,35 @@
+header {
+  md-toolbar {
+    height: 48px;
+    max-height: 48px;
+    min-height: 48px;
+    .md-toolbar-tools {
+      height: 48px;
+      max-height: 48px;
+      min-height: 48px;
+
+      .md-title {
+        font-size: 24px;
+      }
+      
+      md-tabs {
+        md-tabs-wrapper {
+          md-tabs-canvas {
+            md-pagination-wrapper {
+              md-tab-item, md-tab-item.md-tab {
+
+                padding-left: 6px;
+                padding-right: 6px;
+                > span {
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+      
