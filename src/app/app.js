@@ -52,6 +52,7 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     .icon('phone',      'assets/icons/md/phone.svg'   )
     .icon('work',       'assets/icons/md/work.svg'    )
     .icon('home',       'assets/icons/md/home.svg'    )
+    .icon('mail',       'assets/icons/md/mail.svg'    )
 
     // Menu Icons
     .icon('menu-vert',  'assets/icons/md/menu-vert.svg')
