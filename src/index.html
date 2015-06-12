@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="johoApp" ng-controller="View as vm">
+<html ng-app="johoApp">
   <head>
     <meta charset="utf-8">
     <title>johoApp</title>
@@ -29,16 +29,8 @@
             ng-include="'app/components/header/header.html'">
     </header>
 
-    <md-content role="main" 
-                md-scroll-y 
-                layout-padding 
-                flex
-                layout="row">
-  
-      <div layout-fill
-           ui-view>
-      </div>
-
+    <md-content layout="row" role="main" md-scroll-y flex>
+      <div layout-fill ui-view></div>
     </md-content>
 
     <footer ng-controller="Footer as fm"

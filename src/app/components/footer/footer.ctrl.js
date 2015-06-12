@@ -8,6 +8,13 @@ angular.module('johoApp')
   function Footer() {
     var self = this;
 
+    this.items = [
+      { label: 'GitHub',    icon: 'github'    },
+      { label: 'CodePen',   icon: 'codepen'   },
+      { label: 'LinkedIn',  icon: 'linkedin'  },
+      { label: 'AngelList', icon: 'angellist' },
+    ];
+
   }
 
 

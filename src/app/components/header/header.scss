@@ -1,17 +1,54 @@
 header {
   md-toolbar {
+    z-index: 3;
     height: 48px;
     max-height: 48px;
     min-height: 48px;
+    padding: 0 16px;
     .md-toolbar-tools {
+
       height: 48px;
       max-height: 48px;
       min-height: 48px;
 
-      .md-title {
-        font-size: 24px;
+      span {
+
+        line-height: 48px;
+        display: block;
+      
+        .md-title {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 48px;
+          display: inline-block;
+          color: rgba(0, 0, 0, 0.87);
+          padding-right: 4px;
+        }
+
+        .md-subhead {
+          //font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          display: inline-block;
+          color: rgba(0, 0, 0, 0.54);
+          padding-left: 4px;
+        }
       }
       
+    }
+    /*
+    .md-toolbar-tools.md-toolbar-tools-bottom {
+      > span {
+        .md-subhead {
+          padding: 6px 0 12px;
+          font-size: 16px;
+          //display: block;
+          //padding: 0px 24px 24px 12px;
+          color: rgba(0, 0, 0, 0.54);
+        }
+      }
+    */
+    /*}
       md-tabs {
         md-tabs-wrapper {
           md-tabs-canvas {
@@ -28,8 +65,8 @@ header {
           }
         }
       }
-
     }
+    */
   }
 }
       

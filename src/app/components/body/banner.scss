@@ -1,0 +1,34 @@
+$banner-height:             96px !default;
+$banner-tall-height:        128px !default;
+$banner-indent-margin:      64px !default;
+$banner-padding:            16px !default;
+
+md-toolbar.banner, .banner {
+  height: $banner-height;
+  min-height: $banner-height;
+  max-height: $banner-height;
+  width: 100%;
+
+  &.md-tall {
+    height: $banner-tall-height;
+    min-height: $banner-tall-height;
+    max-height: $banner-tall-height;
+  }
+
+
+  .md-indent {
+    margin-left: $banner-indent-margin;
+  }
+
+  ~ md-content {
+    > md-list {
+      padding: 0;
+
+      md-list-item:last-child {
+        md-divider {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -26,9 +26,9 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     });
     var gpGreyMap = $mdThemingProvider.extendPalette('grey', {
       '500':  '333333', 
-      '300':  'e8e8e8',   
-      '800':  '343434',   
-      'A100': '00ff00',
+      '300':  'e6e6e6',   
+      '800':  '444444',   
+      'A100': 'f0f0f0',
       'contrastDefaultColor': 'dark',
       'contrastDarkColors'  : ['500', '300']
     });
@@ -46,16 +46,26 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   })
   .config(function ($mdIconProvider) {
     $mdIconProvider
-      .icon('profile',  'assets/icons/md/face.svg')
-      .icon('code',     'assets/icons/md/code.svg')
-      .icon('phone',    'assets/icons/md/phone.svg')
-      .icon('work',     'assets/icons/md/work.svg')
-      .icon('morev',    'assets/icons/md/morev.svg')
-      .icon('moreh',    'assets/icons/md/moreh.svg')
-      .icon('menu',     'assets/icons/md/menu.svg')
-      .icon('github',   'assets/icons/fa/github.svg')
-      .icon('linkedin', 'assets/icons/fa/linkedin.svg')
-      .icon('codepen',  'assets/icons/fa/codepen.svg')
-      .icon('angellist','assets/icons/fa/angellist.svg');
+      .icon('profile',    'assets/icons/md/face.svg')
+      .icon('code',       'assets/icons/md/code.svg')
+      .icon('phone',      'assets/icons/md/phone.svg')
+      .icon('work',       'assets/icons/md/work.svg')
+
+      // Menu Icons
+      .icon('menu-vert',  'assets/icons/md/menu-vert.svg')
+      .icon('menu-hori',  'assets/icons/md/menu-hori.svg')
+      .icon('menu-bars',  'assets/icons/md/menu-bars.svg')
+      .icon('menu-grid',  'assets/icons/md/menu-grid.svg')
+      // Directional Icons
+      .icon('arrow-left',     'assets/icons/md/arrow-left.svg')
+      .icon('arrow-right',    'assets/icons/md/arrow-right.svg')
+      .icon('chevron-left',   'assets/icons/md/chevron-left.svg')
+      .icon('chevron-right',  'assets/icons/md/chevron-right.svg')
+
+      // Profile/Social Media
+      .icon('github',     'assets/icons/fa/github.svg')
+      .icon('linkedin',   'assets/icons/fa/linkedin.svg')
+      .icon('codepen',    'assets/icons/fa/codepen.svg')
+      .icon('angellist',  'assets/icons/fa/angellist.svg');
 
   });
