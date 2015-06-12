@@ -16,4 +16,13 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     $mdThemingProvider.theme('default')
       .primaryPalette('grey')
       .accentPalette('blue-grey');
+  })
+  .config(function ($mdIconProvider) {
+    $mdIconProvider
+      .icon('home',     'assets/icons/md/home.svg')
+      .icon('profile',  'assets/icons/md/face.svg')
+      .icon('code',     'assets/icons/md/code.svg')
+      .icon('phone',    'assets/icons/md/phone.svg')
+      .icon('work',     'assets/icons/md/work.svg');
+
   });

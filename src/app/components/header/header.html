@@ -1,14 +1,25 @@
 <md-toolbar class="md-whiteframe-z1">
 
-  <div class="md-toolbar-tools" layout="row">
+  <div class="md-toolbar-tools">
 
-    <span flex="5"></span>
+    <span flex="5" hide-sm></span>
 
-    <h3>Jonathan Ho</h3>
+    <span flex flex-sm="45">
+      <h3>Jonathan Ho</h3>
+    </span>
 
-    <span flex></span>
+    <span flex flex-sm="55">
+      <md-tabs md-stretch-tabs="auto" md-swipe-content>
+        <md-tab ng-repeat="tab in hm.tabs">
+          <md-tab-label>
+              <span hide-sm>{{tab.label}}</span>
+              <md-icon hide-gt-sm md-svg-icon="{{tab.icon}}"></md-icon>
+            </md-tab-label>
+        </md-tab>
+      </md-tabs>
+    </span>
 
-    
+    <span flex="5" hide-sm></span>
 
   </div>
 

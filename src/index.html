@@ -20,17 +20,23 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body layout-fill layout="column">
+  <body layout="column">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header ng-include="'app/components/header/header.html'"></header>
+    <header ng-controller="Header as hm"
+            ng-include="'app/components/header/header.html'">
+    </header>
 
-    <md-content layout-fill>
+    <md-content role="main" flex md-scroll-y>
+      
     </md-content>
 
-    <footer ng-include="'app/components/footer/footer.html'"></footer>
+
+    <footer ng-controller="Footer as fm"
+            ng-include="'app/components/footer/footer.html'">
+    </footer>
   
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
