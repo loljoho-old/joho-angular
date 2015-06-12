@@ -72,12 +72,9 @@ angular.module('johoApp')
         name: 'C/C++/C#, Java',
         icon: 'oop',
         rank: 60
-      }]
+      }];
     }
 
-    /*
-     * 
-     */
 
   }
 
