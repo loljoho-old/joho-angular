@@ -11,18 +11,13 @@ angular.module('johoApp')
     self.selectedTab = 0;
 
     this.tabs = [
-      { title: 'About',     icon: 'profile' },
-      { title: 'Projects',  icon: 'work'    },
-      { title: 'Contact',   icon: 'phone'   }
+      { title: 'Home',      icon: 'home'    },
+      { title: 'About',     icon: 'face'    },
+      { title: 'Study',     icon: 'school'  },
+      { title: 'Work',      icon: 'code'    },
+      { title: 'Contact',   icon: 'mail'    }
     ];
 
-    this.profiles = [
-      { label: 'GitHub',    icon: 'github',     url: 'http://github.com/loljoho/'     },
-      { label: 'CodePen',   icon: 'codepen',    url: 'http://codepen.io/loljoho/'     },
-      { label: 'LinkedIn',  icon: 'linkedin',   url: 'http://linkedin.com/in/loljoho' },
-      { label: 'AngelList', icon: 'angellist',  url: 'http://angel.co/loljoho'        }
-
-    ];
   }
 
 

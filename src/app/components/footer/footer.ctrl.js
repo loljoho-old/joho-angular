@@ -9,10 +9,10 @@ angular.module('johoApp')
     var self = this;
 
     this.items = [
-      { label: 'GitHub',    icon: 'github'    },
-      { label: 'CodePen',   icon: 'codepen'   },
-      { label: 'LinkedIn',  icon: 'linkedin'  },
-      { label: 'AngelList', icon: 'angellist' },
+      { label: 'GitHub',    icon: 'github',     url: 'http://github.com/loljoho/'     },
+      { label: 'CodePen',   icon: 'codepen',    url: 'http://codepen.io/loljoho/'     },
+      { label: 'LinkedIn',  icon: 'linkedin',   url: 'http://linkedin.com/in/loljoho' },
+      { label: 'AngelList', icon: 'angellist',  url: 'http://angel.co/loljoho'        }
     ];
 
   }
