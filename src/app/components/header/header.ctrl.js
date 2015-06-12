@@ -8,10 +8,12 @@ angular.module('johoApp')
   function Header() {
     var self = this;
 
+    self.selectedTab = 0;
+
     this.tabs = [
-      { label: 'About',     icon: 'profile'},
-      { label: 'Projects',  icon: 'work'},
-      { label: 'Contact',   icon: 'phone'}
+      { title: 'About',     icon: 'profile' },
+      { title: 'Projects',  icon: 'work'    },
+      { title: 'Contact',   icon: 'phone'   }
     ];
   }
 
