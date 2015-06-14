@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="johoApp">
+<html ng-app="johoApp" ng-controller="View as vm">
   <head>
     <meta charset="utf-8">
     <title>johoApp</title>
@@ -25,27 +25,39 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
-                md-component-id="left">
-      <md-toolbar>
-        <div class="md-toolbar-tools">
-          <span flex></span>
-        </div>
-      </md-toolbar>
-      <md-content>
-        <br/><br/><br/><br/><br/><br/><br/><br/>
-      </md-content>
-    </md-sidenav>
-
-    <header ng-controller="Header as hm"
+    <header layout="row"
+            ng-controller="Header as hm"
             ng-include="'app/components/header/header.html'">
     </header>
 
-    <md-content layout="row" role="main" md-scroll-y flex>
-      <div layout-fill ui-view></div>
+    <md-content layout="row" md-scroll-y flex>
+
+      <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z4"
+                  md-is-locked-open="$mdMedia('gt-md')"
+                  md-component-id="left">
+        <md-content>
+          <md-subheader class="md-subhead">
+            Web Developer · New York NY
+          </md-subheader>
+          <md-divider>
+        </md-content>
+      </md-sidenav>
+
+      <main layout="column" layout-fill>
+
+        <div layout-fill ui-view></div>
+        
+      </main>
+
+      <md-sidenav class="site-sidenav md-sidenav-right"
+                  md-is-locked-open="$mdMedia('gt-md')"
+                  md-component-id="right">
+      </md-sidenav>
+
     </md-content>
 
-    <footer ng-controller="Footer as fm"
+    <footer layout="row"
+            ng-controller="Footer as fm"
             ng-include="'app/components/footer/footer.html'">
     </footer>
   

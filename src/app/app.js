@@ -7,7 +7,7 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
       url: '/',
       templateUrl: 'app/main/main.html',
       controller: 'Main',
-      controllerAs: 'vm'
+      controllerAs: 'mm'
     });
 
   $urlRouterProvider.otherwise('/');
@@ -30,7 +30,7 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     '800':  '444444',   
     'A100': 'f0f0f0',
     'contrastDefaultColor': 'dark',
-    'contrastDarkColors'  : ['500', '300']
+    'contrastLightColors'  : ['800', 'A100']
   });
 
   // Register New Colour Palette Maps
@@ -40,7 +40,7 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
 
   // Set Themes
   $mdThemingProvider.theme('default')
-    .primaryPalette('gpGrey')
+    .primaryPalette('grey')
     .accentPalette('gpRed')
     .warnPalette('purple');
 })
