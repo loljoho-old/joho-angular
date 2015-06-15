@@ -31,6 +31,15 @@ body {
   }
 }
 
+md-sidenav.md-locked-open,
+md-sidenav.md-locked-open.md-closed,
+md-sidenav.md-locked-open.md-closed.md-sidenav-left,
+md-sidenav.md-locked-open.md-closed,
+md-sidenav.md-locked-open.md-closed.md-sidenav-right,
+md-sidenav.md-locked-open-remove.md-closed {
+  background-color: transparent;
+}
+/*
 .banner {
 
   height: $banner-height;
@@ -60,3 +69,4 @@ body {
     }
   }
 }
+*/

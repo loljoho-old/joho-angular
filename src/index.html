@@ -30,42 +30,16 @@
             ng-include="'app/components/header/header.html'">
     </header>
 
-    <md-content id="content" 
-                layout="row"
-                md-scroll-y 
-                flex
-                ui-view>
+    <md-content id="content" md-scroll-y flex ui-view>
     </md-content>
 
-    <section id="contact"
-             layout="row"
-             flex
-             ng-include="'app/components/body/contact/contact.html'">
-    </section>
-
+<!--
+    <md-content id="content" layout="row" md-scroll-y flex ui-view></md-content>
+-->
     <footer layout="column"
             ng-controller="Footer as fm"
             ng-include="'app/components/footer/footer.html'">
     </footer>
-
-
-    <md-sidenav class="site-sidenav md-sidenav-right md-whiteframe-z2"
-                md-component-id="right">
-      <md-toolbar class="md-medium-tall md-accent"
-                  ng-click="vm.closeSidenav()">
-        <div class="md-toolbar-tools">
-          <md-button class="md-icon-button"
-                     aria-label="Close Sidenav">
-            <md-icon md-svg-icon="arrow-right"></md-icon>
-          </md-button>
-          <span flex></span>
-        </div>
-      </md-toolbar>
-      <md-content>
-        <md-list>
-        </md-list>
-      </md-content>
-    </md-sidenav>
   
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
