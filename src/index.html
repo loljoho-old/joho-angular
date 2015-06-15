@@ -30,9 +30,11 @@
             ng-include="'app/components/header/header.html'">
     </header>
 
-    <md-content layout="row" md-scroll-y flex>
 
-      <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z4"
+
+    <md-content layout="row" md-scroll-y flex>
+    <!--
+      <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z1"
                   md-is-locked-open="$mdMedia('gt-md')"
                   md-component-id="left">
         <md-content>
@@ -42,19 +44,20 @@
           <md-divider>
         </md-content>
       </md-sidenav>
-
+    -->
       <main layout="column" layout-fill>
 
         <div layout-fill ui-view></div>
         
       </main>
-
+    <!--
       <md-sidenav class="site-sidenav md-sidenav-right"
                   md-is-locked-open="$mdMedia('gt-md')"
                   md-component-id="right">
       </md-sidenav>
-
+    -->
     </md-content>
+
 
     <footer layout="row"
             ng-controller="Footer as fm"

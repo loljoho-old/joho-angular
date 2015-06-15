@@ -4,13 +4,29 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
-      url: '/',
+      url: '/home',
       templateUrl: 'app/main/main.html',
       controller: 'Main',
       controllerAs: 'mm'
-    });
+    })
+      .state('home.about', {
+        url: '/about',
+        templateUrl: 'app/components/header/about.html'
+      })
+      .state('home.study', {
+        url: '/study',
+        templateUrl: 'app/components/header/study.html'
+      })
+      .state('home.work', {
+        url: '/work',
+        templateUrl: 'app/components/header/work.html'
+      })
+      .state('home.contact', {
+        url: '/contact',
+        templateUrl: 'app/components/header/contact.html'
+      });
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/home');
 })
 .config(function ($mdThemingProvider) {
   // Extend Existing Themes

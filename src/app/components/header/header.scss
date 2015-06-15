@@ -4,7 +4,7 @@ header {
     height: 48px;
     max-height: 48px;
     min-height: 48px;
-    padding: 0 16px;
+    //padding: 0 16px;
     .md-toolbar-tools {
 
       height: 48px;
@@ -13,15 +13,15 @@ header {
 
       span {
 
-        line-height: 48px;
-        display: block;
+        //line-height: 48px;
+        //display: block;
       
         .md-title {
           font-size: 24px;
           font-weight: 600;
           line-height: 48px;
           display: inline-block;
-          //color: rgba(0, 0, 0, 0.87);
+          color: rgba(0, 0, 0, 0.87);
           padding-right: 4px;
         }
 
@@ -31,7 +31,6 @@ header {
           line-height: 24px;
           display: inline-block;
           color: rgba(0, 0, 0, 0.54);
-          padding-left: 4px;
         }
       }
       

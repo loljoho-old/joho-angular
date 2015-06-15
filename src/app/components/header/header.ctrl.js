@@ -9,14 +9,37 @@ angular.module('johoApp')
     var self = this;
 
     self.selectedTab = 0;
+    self.onChangeTab = onChangeTab;
 
     self.tabs = [
-      { title: 'Home',      icon: 'home'    },
-      { title: 'About',     icon: 'face'    },
-      { title: 'Study',     icon: 'school'  },
-      { title: 'Work',      icon: 'code'    },
-      { title: 'Contact',   icon: 'mail'    }
+      { title: 'About',     icon: 'face',   state: 'about'  },
+      { title: 'Study',     icon: 'school', state: 'study'  },
+      { title: 'Work',      icon: 'code',   state: 'work'   },
+      { title: 'Contact',   icon: 'mail',   state: 'contact'}
     ];
+
+    function onChangeTab(state) {
+      $location.url('/home/' + state);
+      $log.info('Tab: ' + self.selectedTab + ' ' + $location.templateUrl);
+    }
+    /*
+    self.$watch('selectedTab', function(current, previous) {
+      switch(current) {
+        case 0:
+          $location.url('/about');
+          break;
+        case 1:
+          $location.url('/study');
+          break;
+        case 2:
+          $location.url('/work');
+          break;
+        case 3:
+          $location.url('/contact');
+          break;
+      }
+    });
+    */
 /*
         $stateProvider
         .state('view1', {
@@ -41,25 +64,7 @@ angular.module('johoApp')
                 case 2:
                     $location.url("/view3");
                     break;
-            }
-
-    self.$watch('selectedTab', function(current, previous) {
-      switch(current) {
-        case 0:
-          $location.url("");
-          break;
-        case 1:
-          break;
-        case 2:
-          break;
-        case 3:
-          break;
-        case 4:
-          break;
-        case 5:
-          break;
-      }
-    })*/
+            }*/
   }
 
 
