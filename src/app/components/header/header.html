@@ -2,13 +2,9 @@
   <div class="md-toolbar-tools" 
        layout="row" 
        layout-align="space-between center">
-  
-  <!--
-    <md-button class="md-icon-button" aria-label="Sidebar" ng-click="vm.toggleSidebarLeft()" hide-gt-md>
-      <md-icon md-svg-icon="menu-bars"></md-icon>
-    </md-button>
-  -->
+
     <div layout="row" layout-align="start center" flex-gt-md>
+
       <span>
         <h1 class="md-title">Jonathan Ho</h1>
       </span>
@@ -19,24 +15,26 @@
           <small hide-md> · New York NY</small>
         </h2>
       </span>
-    </div>
-  <!--
 
-    <span flex-gt-lg flex-lg="10" flex-md="5"></span>
-  -->
+    </div>
+
     <div layout="row" layout-align="end center" flex>
       <md-tabs md-stretch-tabs="auto"
                md-selected="hm.selectedTab"
                md-swipe-content
                flex>
+
         <md-tab ng-repeat="tab in hm.tabs"
                 md-on-select="hm.onChangeTab(tab.state)">
+
           <md-tab-label>
             <span hide-sm hide-md>{{tab.title}}</span>
             <md-icon hide-gt-md md-svg-icon="{{tab.icon}}"></md-icon>
           </md-tab-label>
+          
         </md-tab>
       </md-tabs>
+
     </div>
 
   </div>

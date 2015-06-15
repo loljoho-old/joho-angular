@@ -5,27 +5,20 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'app/main/main.html',
-      controller: 'Main',
-      controllerAs: 'mm'
+      templateUrl: 'app/components/header/about.html'
     })
-      .state('home.about', {
-        url: '/about',
-        templateUrl: 'app/components/header/about.html'
-      })
-      .state('home.study', {
-        url: '/study',
-        templateUrl: 'app/components/header/study.html'
-      })
-      .state('home.work', {
-        url: '/work',
-        templateUrl: 'app/components/header/work.html'
-      })
-      .state('home.contact', {
-        url: '/contact',
-        templateUrl: 'app/components/header/contact.html'
-      });
-
+    .state('study', {
+      url: '/study',
+      templateUrl: 'app/components/header/study.html'
+    })
+    .state('work', {
+      url: '/work',
+      templateUrl: 'app/components/header/work.html'
+    })
+    .state('contact', {
+      url: '/contact',
+      templateUrl: 'app/components/header/contact.html'
+    });
   $urlRouterProvider.otherwise('/home');
 })
 .config(function ($mdThemingProvider) {

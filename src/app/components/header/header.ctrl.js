@@ -19,52 +19,9 @@ angular.module('johoApp')
     ];
 
     function onChangeTab(state) {
-      $location.url('/home/' + state);
+      $location.url('/' + state);
       $log.info('Tab: ' + self.selectedTab + ' ' + $location.templateUrl);
     }
-    /*
-    self.$watch('selectedTab', function(current, previous) {
-      switch(current) {
-        case 0:
-          $location.url('/about');
-          break;
-        case 1:
-          $location.url('/study');
-          break;
-        case 2:
-          $location.url('/work');
-          break;
-        case 3:
-          $location.url('/contact');
-          break;
-      }
-    });
-    */
-/*
-        $stateProvider
-        .state('view1', {
-            url: "/view1",
-            templateUrl: "partials/view1.html"
-        })
-        .state('view2', {
-            url: "/view2",
-            templateUrl: "partials/view2.html"
-        })
-        .state('view3', {
-            url: "/view3",
-            templateUrl: "partials/view3.html"
-        });
-            switch (current) {
-                case 0:
-                    $location.url("/view1");
-                    break;
-                case 1:
-                    $location.url("/view2");
-                    break;
-                case 2:
-                    $location.url("/view3");
-                    break;
-            }*/
   }
 
 
