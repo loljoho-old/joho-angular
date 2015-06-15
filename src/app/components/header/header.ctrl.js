@@ -14,10 +14,9 @@ angular.module('johoApp')
     self.previousTab = self.selectedTab;
 
     self.tabs = [
-      { title: 'About',   icon: 'face',   state: 'about'    },
-      { title: 'Study',   icon: 'school', state: 'study'    },
-      { title: 'Work',    icon: 'code',   state: 'work'     },
-      { title: 'Contact', icon: 'mail',   state: 'contact'  }
+      { title: 'Home',    icon: 'home',   state: 'home'   },
+      { title: 'Life',    icon: 'face',   state: 'life'   },
+      { title: 'Code',    icon: 'code',   state: 'code'   }
     ];
 
     function onTabSelect(state) {

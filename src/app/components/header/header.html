@@ -3,39 +3,45 @@
        layout="row" 
        layout-align="space-between center">
 
-    <div layout="row" layout-align="start center" flex-gt-md>
+    <span>
+      <h1 class="md-title">Jonathan Ho</h1>
+    </span>
 
-      <span>
-        <h1 class="md-title">Jonathan Ho</h1>
-      </span>
+    <span hide-sm>
+      <h2 class="md-subhead">
+        <small>Web Developer</small>
+        <small hide-md> · New York NY</small>
+      </h2>
+    </span>
 
-      <span hide-sm>
-        <h2 class="md-subhead">
-          <small>Web Developer</small>
-          <small hide-md> · New York NY</small>
-        </h2>
-      </span>
+    <span flex hide-md hide-sm></span>
 
-    </div>
-
-    <div layout="row" layout-align="end center" flex>
+    <span flex>
       <md-tabs md-stretch-tabs="auto"
                md-selected="hm.selectedTab"
                md-swipe-content
-               flex>
-
+               md-no-pagination>
         <md-tab ng-repeat="tab in hm.tabs"
                 md-on-select="hm.onTabSelect(tab.state)">
-
           <md-tab-label>
             <span hide-sm hide-md>{{tab.title}}</span>
             <md-icon hide-gt-md md-svg-icon="{{tab.icon}}"></md-icon>
           </md-tab-label>
-          
         </md-tab>
       </md-tabs>
+    </span>
+    <!-- TODO:  Integrate with md-ink-bar in md-tabs
+    <md-progress-linear class="md-accent"
+                        layout="row" flex
+                        md-mode="indeterminate">
+    </md-progress-linear>
+    -->
 
-    </div>
+    <md-button class="md-icon-button" 
+               aria-label="Open Sidebar"
+               ng-click="vm.openSidenav()">
+      <md-icon md-svg-icon="menu-bars"></md-icon>
+    </md-button>
 
   </div>
 </md-toolbar>

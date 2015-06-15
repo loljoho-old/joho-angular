@@ -1,0 +1,38 @@
+<md-bottom-sheet>
+  <md-toolbar class="md-hue-2 md-whiteframe-z2">
+
+    <div class="md-toolbar-tools">
+
+      <span flex></span>
+
+      <span>
+        <md-button class="md-icon-button"
+                   ng-repeat="item in fm.items"
+                   aria-label="{{item.label}}">
+          <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+        </md-button>
+      </span>
+
+    </div>
+
+  </md-toolbar>
+</md-bottom-sheet>
+<!--
+
+  <md-list>
+
+    <md-list-item ng-repeat="item in items">
+
+      <md-button class="md-grid-item-content" 
+                 ng-repeat="item in fm.items"
+                 aria-label="{{item.label}}">
+        <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+        <div class="md-grid-text"> {{ item.label }} </div>
+      </md-button>
+
+    </md-list-item>
+
+  </md-list>
+
+</md-bottom-sheet>
+-->

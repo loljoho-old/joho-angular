@@ -12,27 +12,30 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
-      url: '/home',
       views: {
-        'primary': {
-          templateUrl: 'app/content/about/primary.html'
-        },
-        'secondary': {
-          templateUrl: 'app/content/about/secondary.html'
+        'content': {
+          url: '/home',
+          templateUrl: 'app/content/about/about.html',
+          controller: 'About',
+          controllerAs: 'ctrl'
         }
       }
     })
-    .state('study', {
-      url: '/study',
-      templateUrl: 'app/components/header/study.html'
+    .state('about', {
+      views: {
+        'content': {
+          url: '/life',
+          templateUrl: 'app/components/header/about.html'
+        }
+      }
     })
-    .state('work', {
-      url: '/work',
-      templateUrl: 'app/components/header/work.html'
-    })
-    .state('contact', {
-      url: '/contact',
-      templateUrl: 'app/components/header/contact.html'
+    .state('code', {
+      views: {
+        'content': {
+          url: '/code',
+          templateUrl: 'app/components/header/code.html'
+        }
+      }
     });
   $urlRouterProvider.otherwise('/home');
 })
