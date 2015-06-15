@@ -2,27 +2,32 @@
 'use strict';
 
 angular.module('johoApp')
-  .controller('Footer', Footer);
+  .controller('View', View);
 
   /* @ngInject */
-  function Footer($mdBottomSheet) {
+  function View($mdSidenav) {
     var self = this;
 
-    self.items = [
+    self.openSidenav    = openSidenav;
+    self.closeSidenav   = closeSidenav;
+    self.toggleSidenav  = toggleSidenav;
+
+    self.sites = [
       { label: 'GitHub',    icon: 'github',     url: 'http://github.com/loljoho/'     },
       { label: 'CodePen',   icon: 'codepen',    url: 'http://codepen.io/loljoho/'     },
       { label: 'LinkedIn',  icon: 'linkedin',   url: 'http://linkedin.com/in/loljoho' },
       { label: 'AngelList', icon: 'angellist',  url: 'http://angel.co/loljoho'        }
     ];
 
-    self.listItemClick = listItemClick;
 
-    function listItemClick($index) {
-      self.clickedItem = self.items[$index];
-      $mdBottomSheet.hide(self.clickedItem);
+    function openSidenav() {
+      $mdSidenav('right').open();
     }
-
+    function closeSidenav() {
+      $mdSidenav('right').close();
+    }
+    function toggleSidenav() {
+      $mdSidenav('right').toggle();
+    }
   }
-
-
 })();
