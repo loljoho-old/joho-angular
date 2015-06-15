@@ -7,9 +7,9 @@
 
     <span>
       <md-button class="md-icon-button"
-                 ng-repeat="item in fm.items"
-                 aria-label="{{item.label}}">
-        <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+                 ng-repeat="site in vm.sites"
+                 aria-label="{{site.label}}">
+        <md-icon md-svg-icon="{{site.icon}}"></md-icon>
       </md-button>
     </span>
 

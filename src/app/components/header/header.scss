@@ -1,3 +1,30 @@
+// Easing Curves
+//--------------------------------------------
+
+$swift-ease-out-duration: 0.4s !default;
+$swift-ease-out-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !default;
+$swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !default;
+
+$swift-ease-in-duration: 0.3s !default;
+$swift-ease-in-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2) !default;
+$swift-ease-in: all $swift-ease-in-duration $swift-ease-in-timing-function !default;
+
+$swift-ease-in-out-duration: 0.5s !default;
+$swift-ease-in-out-timing-function: cubic-bezier(0.35, 0, 0.25, 1) !default;
+$swift-ease-in-out: all $swift-ease-in-out-duration $swift-ease-in-out-timing-function !default;
+
+// Tab Content Keyframes
+//--------------------------------------------
+
+@keyframes md-tab-content-hide {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+// Header Toolbar Structure
+//--------------------------------------------
+
 header {
   md-toolbar {
     z-index: 3;
@@ -6,16 +33,10 @@ header {
     min-height: 48px;
     //padding: 0 16px;
     .md-toolbar-tools {
-
       height: 48px;
       max-height: 48px;
       min-height: 48px;
-
       span {
-
-        //line-height: 48px;
-        //display: block;
-      
         .md-title {
           font-size: 24px;
           font-weight: 600;
@@ -24,7 +45,6 @@ header {
           color: rgba(0, 0, 0, 0.87);
           padding-right: 4px;
         }
-
         .md-subhead {
           //font-size: 16px;
           font-weight: 400;
@@ -33,39 +53,96 @@ header {
           color: rgba(0, 0, 0, 0.54);
         }
       }
-      
     }
-    /*
-    .md-toolbar-tools.md-toolbar-tools-bottom {
-      > span {
-        .md-subhead {
-          padding: 6px 0 12px;
-          font-size: 16px;
-          //display: block;
-          //padding: 0px 24px 24px 12px;
-          color: rgba(0, 0, 0, 0.54);
-        }
-      }
-    */
-    /*}
-      md-tabs {
-        md-tabs-wrapper {
-          md-tabs-canvas {
-            md-pagination-wrapper {
-              md-tab-item, md-tab-item.md-tab {
-
-                padding-left: 6px;
-                padding-right: 6px;
-                > span {
-
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    */
   }
 }
-      
+
+
+.well[ui-view]{
+ height: 65px; 
+}
+
+.ui-view-container {
+  position: relative;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  /*padding-left: 0px;*/  
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}
+
+/*
+
+md-tab-content {
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transform: translateX(0);
+  transition: transform $swift-ease-in-out-duration $swift-ease-in-out-timing-function;
+  overflow: auto;
+  &.md-no-scroll {
+    bottom: auto;
+    overflow: hidden;
+  }
+  &.md-left {
+    transform: translateX(-100%);
+    animation: 2 * $swift-ease-in-out-duration md-tab-content-hide;
+    opacity: 0;
+    * {
+      transition: visibility 0s linear;
+      transition-delay: $swift-ease-in-out-duration;
+      visibility: hidden;
+    }
+  }
+  &.md-right {
+    transform: translateX(100%);
+    animation: 2 * $swift-ease-in-out-duration md-tab-content-hide;
+    opacity: 0;
+    * {
+      transition: visibility 0s linear;
+      transition-delay: $swift-ease-in-out-duration;
+      visibility: hidden;
+    }
+  }
+  > div.ng-leave {
+    animation: 2 * $swift-ease-in-out-duration md-tab-content-hide;
+  }
+}
+
+
+*/
