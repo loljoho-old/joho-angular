@@ -6,9 +6,9 @@
 │   ├── api/
 │   ├── app/
 │   │   ├── core/
-│   │   │   ├── 
+│   │   │   ├── config/
 │   │   │   ├── footer/
-│   │   │   └── 
+│   │   │   └── styles/
 │   │   ├── components/
 │   │   │   ├── header/
 │   │   │   ├── footer/
