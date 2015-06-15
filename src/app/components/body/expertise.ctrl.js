@@ -9,9 +9,7 @@ angular.module('johoApp')
     var self = this;
 
     // Areas of Expertise
-    self.areas = [];
 
-    function activate() {
       self.areas = [{
         name: 'HTML5/CSS3/JS',
         icon: 'dhtml',
@@ -73,8 +71,6 @@ angular.module('johoApp')
         icon: 'oop',
         rank: 60
       }];
-      return self.areas;
-    }
 
 
   }

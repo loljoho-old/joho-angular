@@ -15,8 +15,8 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
       views: {
         'content': {
           url: '/home',
-          templateUrl: 'app/content/about/about.html',
-          controller: 'About',
+          templateUrl: 'app/content/home/index.html',
+          controller: 'Home',
           controllerAs: 'ctrl'
         }
       }
@@ -24,16 +24,20 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     .state('about', {
       views: {
         'content': {
-          url: '/life',
-          templateUrl: 'app/components/header/about.html'
+          url: '/about',
+          templateUrl: 'app/content/about/index.html',
+          controller: 'About',
+          controllerAs: 'ctrl'
         }
       }
     })
-    .state('code', {
+    .state('work', {
       views: {
         'content': {
-          url: '/code',
-          templateUrl: 'app/components/header/code.html'
+          url: '/work',
+          templateUrl: 'app/content/work/index.html',
+          controller: 'Work',
+          controllerAs: 'ctrl'
         }
       }
     });
