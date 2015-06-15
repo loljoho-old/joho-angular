@@ -1,0 +1,40 @@
+{
+    "name": "Jonathan Ho",
+    "position": "UI/Front-End Web Developer",
+    "subtitle": "Web Developer · New York NY",
+    "contacts": [
+    {
+        "name": "City",
+        "value": "New York NY",
+        "icon": "maps:map"
+    }, {
+        "name": "Home",
+        "value": "1-929-400-7843",
+        "icon": "notification:phone"
+    }, {
+        "name": "Mobile",
+        "value": "1-908-938-7843",
+        "icon": "hardware:phone-android"
+    }, {
+        "name": "Email",
+        "value": "joho1710@gmail.com",
+        "icon": "content:mail"
+    }, {
+        "name": "Website",
+        "value": "http://loljoho.github.io",
+        "icon": "content:link"
+    }],
+    "profiles": [{
+        "name": "GitHub",
+        "url": "http://github.com/loljoho",
+        "icon": "fa-github"
+    },
+    {
+        "site": "LinkedIn",
+        "url": "http://linkedin.com/in/loljoho",
+        "icon": "fa-linkedin"
+    }
+    ],
+    "icon": "action:face"
+
+}

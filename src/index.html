@@ -20,17 +20,49 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body layout-fill layout="column">
+  <body layout="column">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header ng-include="'app/components/header/header.html'"></header>
+    <header layout="row"
+            ng-controller="Header as hm"
+            ng-include="'app/components/header/header.html'">
+    </header>
 
-    <md-content layout-fill>
+
+
+    <md-content layout="row" md-scroll-y flex>
+    <!--
+      <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z1"
+                  md-is-locked-open="$mdMedia('gt-md')"
+                  md-component-id="left">
+        <md-content>
+          <md-subheader class="md-subhead">
+            Web Developer · New York NY
+          </md-subheader>
+          <md-divider>
+        </md-content>
+      </md-sidenav>
+    -->
+      <main layout="column" layout-fill>
+
+        <div layout-fill ui-view></div>
+        
+      </main>
+    <!--
+      <md-sidenav class="site-sidenav md-sidenav-right"
+                  md-is-locked-open="$mdMedia('gt-md')"
+                  md-component-id="right">
+      </md-sidenav>
+    -->
     </md-content>
 
-    <footer ng-include="'app/components/footer/footer.html'"></footer>
+
+    <footer layout="row"
+            ng-controller="Footer as fm"
+            ng-include="'app/components/footer/footer.html'">
+    </footer>
   
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

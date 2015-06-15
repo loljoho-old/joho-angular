@@ -1,0 +1,90 @@
+{
+    "name": "Jonathan Ho",
+    "title": "UI/Front-End Web Developer",
+    "subtitle": "Web Developer · New York NY",
+    "picture": "",
+    "contact": {
+        "city": "New York",
+        "state": "NY",
+        "website": "http://loljoho.github.io",
+        "email": "joho1710@gmail.com",
+        "phone": "1-929-400-7843",
+        "github": "http://github.com/loljoho",
+        "linkedin": "http://linkedin.com/in/loljoho"
+    },
+    "expertise": [{
+        "name": "HTML, CSS/Sass",
+        "level": 100
+    }, {
+        "name": "AngularJS & Node.js",
+        "level": 100
+    }, {
+        "name": "JavaScript/jQuery",
+        "level": 95
+    }, {
+        "name": "Responsive Web Design",
+        "level": 90
+    }, {
+        "name": "Grunt, Gulp, Git",
+        "level": 85
+    }, {
+        "name": "REST APIs, MySQL",
+        "level": 82
+    }, {
+        "name": "C/C+/C#, Visual Studio",
+        "level": 70
+    }, {
+        "name": "Progressive Enhancement",
+        "level": 75
+    }, {
+        "name": "Web Standards & Accessibility",
+        "level": 70
+    }],
+    "projects": [{
+        "name": "poppyGP Player",
+        "demo": "http://poppy.gq/stream",
+        "source": "http://github.com/gpquery/poppygp",
+        "summary": "AngularJS single-page web application with video channel and webchat driven by Reddit Formula 1 motor racing fan community",
+        "highlights": [
+            "Maintained back-end components and implemented front-end UI/UX innovations, gaining continuous increases in frequency, duration, and geographic scope of visits",
+            "Alleviated sudden and overwhelming 400% spike in traffic by immediately configuring a new AWS EC2 instance to faciliate migration while maintaining consistency of service.",
+            "Designed and developed a responsive, cross-platform user interface with Sass/Scss-styled directives in compliance with Google's Material Design specification"
+        ]
+    }, {
+        "name": "GPQuery Dashboard",
+        "demo": "http://gpquery.github.io",
+        "source": "http://github.com/gpquery/dashboard",
+        "summary": "Statistical analysis and data visualisation for Grand Prix Racing records since 1950",
+        "highlights": [
+            "Designed and developed a responsive, cross-platform user interface with Sass/Scss-styled directives in compliance with Google's Material Design specification",
+            "Designed and developed a responsive, cross-platform user interface with Sass/Scss-styled directives in compliance with Google's Material Design specification",
+            "Automated workflow and build tasks through creation of lightweight Grunt/Gulp-based local development environment"
+        ]
+    }, {
+        "name": "Paper Resume",
+        "demo": "http://loljoho.github.io/paper-resume",
+        "source": "http://github.com/loljoho/paper-resume",
+        "summary": "You're looking at it.",
+        "highlights": [
+            "Lorem ipsum paper resume Angular application Web Developer for Front- and Back-End.",
+            "Implemented D3.js and nvD3 data visualisation libraries and developed custom graph and chart generation Angular directives for reusability.", 
+            "Utilised Angular-Resource $resource for RESTful interaction with Ergast Developer API experimental web service to send queries based on user-selected parameters."
+        ]
+    }],
+    "skills": {
+
+    },
+    "jobs": [{
+        "employer": "Safe Haven Computers",
+        "position": "Technician",
+        "dates": "2010",
+        "location": "Raritan NJ"
+    }, {
+        "employer": "Fulgo, Inc.",
+        "position": "Systems Engineer/Technician",
+        "dates": "2004 - 2009",
+        "location": "Hillsborough NJ"
+    }
+    ]
+    
+}

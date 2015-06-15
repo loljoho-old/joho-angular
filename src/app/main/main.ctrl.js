@@ -5,8 +5,7 @@ angular.module('johoApp')
   .controller('Main', Main);
 
   /* @ngInject */
-  function Main($mdSidenav) {
-    
-
+  function Main() {
   }
+  
 })();

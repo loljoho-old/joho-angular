@@ -1,13 +1,6 @@
+FRIDAY 12 JUNE TASKLIST:
 
-- [ ] [Shell Scripts](https://github.com/angular/material/tree/master/scripts)
-  - [ ] Build Standard/Release
-    - [ ] Increment bower/npm Version
-    - [ ] Git Tag Version
-    - [ ] Git Commit
-    - [ ] Git Push Origin
-  - [ ] Build Travis_CI
-  - [ ] Deploy Production
-- [ ] Server Configuration
-  - [ ] Apache `.htaccess`
-- [x] Update `bower.json` dependencies versions
-- [x] Update `package.json` dependencies versions
+- [ ] Mock API with Résumé Data
+  - [ ] 
+- [ ] Tabs with `ui-router` to display data
+- [ ] 
