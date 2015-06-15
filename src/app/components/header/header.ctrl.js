@@ -8,19 +8,23 @@ angular.module('johoApp')
   function Header($location, $log) {
     var self = this;
 
+    self.onTabSelect = onTabSelect;
+
     self.selectedTab = 0;
-    self.onChangeTab = onChangeTab;
+    self.previousTab = self.selectedTab;
 
     self.tabs = [
-      { title: 'About',     icon: 'face',   state: 'about'  },
-      { title: 'Study',     icon: 'school', state: 'study'  },
-      { title: 'Work',      icon: 'code',   state: 'work'   },
-      { title: 'Contact',   icon: 'mail',   state: 'contact'}
+      { title: 'About',   icon: 'face',   state: 'about'    },
+      { title: 'Study',   icon: 'school', state: 'study'    },
+      { title: 'Work',    icon: 'code',   state: 'work'     },
+      { title: 'Contact', icon: 'mail',   state: 'contact'  }
     ];
 
-    function onChangeTab(state) {
+    function onTabSelect(state) {
+      $log.info('Previous Tab: ' + self.previousTab);
+      $log.info('Selected Tab: ' + self.selectedTab);
       $location.url('/' + state);
-      $log.info('Tab: ' + self.selectedTab + ' ' + $location.templateUrl);
+      self.previousTab = self.selectedTab;
     }
   }
 

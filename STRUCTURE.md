@@ -1,26 +1,26 @@
 
 ```
 src/
-├── 
+├── api/
 ├── app/
 │   ├── components/
-│   │   ├── header/
+│   │   ├── header/                     --> Page Header
 │   │   │   ├── header.ctrl.js
 │   │   │   ├── header.html
 │   │   │   └── header.scss
-│   │   ├── footer/
+│   │   ├── footer/                     --> Page Footer
 │   │   │   ├── footer.ctrl.js
 │   │   │   ├── footer.html
 │   │   │   └── footer.scss
-│   │   ├── body/
-│   │   │   ├── banner.scss
-│   │   │   ├── skills.ctrl.js
-│   │   │   ├── skills.html             --> Technical Skills
-│   │   │   ├── expertise.ctrl.js
-│   │   │   ├── expertise.html          --> Areas of Expertise
+│   │   ├── view/                       --> Page View Manager
 │   │   │   ├── 
 │   │   │   └── 
-│   │   ├── sidebar/
+│   │   └── 
+│   ├── content/
+│   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── 
 │   │   │   ├── 
 │   │   │   └── 
 │   │   └── 
@@ -32,15 +32,7 @@ src/
 │   ├── app.scss
 │   ├── vendor.scss                     --> Compiled Bower styles
 │   ├── data.service.js                 --> Main Data Service
-│   ├── 
-│   │   ├── main.ctrl.js
-│   │   ├── main.html
-│   │   └── 
 │   └── 
-├── 
-│   ├── 
-│   └── 
-├── 
 ├── assets/
 │   ├── icons/
 │   │   ├── fa/
@@ -56,8 +48,6 @@ src/
 │   │   └── 
 │   ├── images/
 │   │   ├── thumbs/
-│   │   │   ├── 
-│   │   │   ├── 
 │   │   │   ├── 
 │   │   │   └── 
 │   │   ├── 

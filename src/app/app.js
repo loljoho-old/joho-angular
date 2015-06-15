@@ -1,11 +1,26 @@
 'use strict';
 
 angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ngMaterial'])
+
+/**
+ * @ngdoc   config
+ * @module  johoApp
+ *
+ * @description
+ * Application route configuration
+ */
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'app/components/header/about.html'
+      views: {
+        'primary': {
+          templateUrl: 'app/content/about/primary.html'
+        },
+        'secondary': {
+          templateUrl: 'app/content/about/secondary.html'
+        }
+      }
     })
     .state('study', {
       url: '/study',
@@ -21,11 +36,16 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     });
   $urlRouterProvider.otherwise('/home');
 })
+
+/**
+ * @ngdoc   config
+ * @module  johoApp
+ *
+ * @description
+ * Configure ngMaterial Theme
+ */
 .config(function ($mdThemingProvider) {
-  // Extend Existing Themes
-  //
-  // Primary/Warn Hues: 500, 300, 800, A100
-  // Accent Hues:       400, 300, 800, A100
+  /*
   var gpRedMap = $mdThemingProvider.extendPalette('red', {
     '500':  'e90000',
     '300':  'fc0f00',
@@ -41,20 +61,27 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     'contrastDefaultColor': 'dark',
     'contrastLightColors'  : ['800', 'A100']
   });
-
-  // Register New Colour Palette Maps
   $mdThemingProvider
     .definePalette('gpRed',  gpRedMap)
     .definePalette('gpGrey', gpGreyMap);
-
-  // Set Themes
+  */
   $mdThemingProvider.theme('default')
     .primaryPalette('grey')
-    .accentPalette('gpRed')
+    .accentPalette('red')
     .warnPalette('purple');
 })
+
+/**
+ * @ngdoc   config
+ * @module  johoApp
+ *
+ * @description
+ * Configure ngMaterial Icons
+ */
 .config(function ($mdIconProvider) {
   $mdIconProvider
+
+    // Menu Icons
     .icon('face',       'assets/icons/md/face.svg'    )
     .icon('code',       'assets/icons/md/code.svg'    )
     .icon('school',     'assets/icons/md/school.svg'  )
@@ -63,21 +90,22 @@ angular.module('johoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
     .icon('home',       'assets/icons/md/home.svg'    )
     .icon('mail',       'assets/icons/md/mail.svg'    )
 
-    // Menu Icons
+    // Navigation Icons
     .icon('menu-vert',  'assets/icons/md/menu-vert.svg')
     .icon('menu-hori',  'assets/icons/md/menu-hori.svg')
     .icon('menu-bars',  'assets/icons/md/menu-bars.svg')
     .icon('menu-grid',  'assets/icons/md/menu-grid.svg')
+
     // Directional Icons
-    .icon('arrow-left',     'assets/icons/md/arrow-left.svg')
-    .icon('arrow-right',    'assets/icons/md/arrow-right.svg')
-    .icon('chevron-left',   'assets/icons/md/chevron-left.svg')
-    .icon('chevron-right',  'assets/icons/md/chevron-right.svg')
+    .icon('arrow-left',     'assets/icons/md/arrow-left.svg'    )
+    .icon('arrow-right',    'assets/icons/md/arrow-right.svg'   )
+    .icon('chevron-left',   'assets/icons/md/chevron-left.svg'  )
+    .icon('chevron-right',  'assets/icons/md/chevron-right.svg' )
 
     // Profile/Social Media
-    .icon('github',     'assets/icons/fa/github.svg')
-    .icon('linkedin',   'assets/icons/fa/linkedin.svg')
-    .icon('codepen',    'assets/icons/fa/codepen.svg')
-    .icon('angellist',  'assets/icons/fa/angellist.svg');
+    .icon('github',     'assets/icons/fa/github.svg'    )
+    .icon('linkedin',   'assets/icons/fa/linkedin.svg'  )
+    .icon('codepen',    'assets/icons/fa/codepen.svg'   )
+    .icon('angellist',  'assets/icons/fa/angellist.svg' );
 
 });

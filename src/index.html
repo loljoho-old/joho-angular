@@ -31,11 +31,20 @@
     </header>
 
     <md-content layout="row" md-scroll-y flex>
-
+<!--
       <main layout="column" layout-fill>
 
-        <div layout-fill ui-view></div>
+        <div ui-view="primary"></div>
+
+        <div ui-view="secondary"></div>
         
+      </main>
+-->
+      <main layout="column" layout-fill>
+        <md-tabs-content-wrapper ui-view="primary">
+        </md-tabs-content-wrapper>
+        <md-tabs-content-wrapper ui-view="secondary">
+        </md-tabs-content-wrapper>
       </main>
 
     </md-content>
