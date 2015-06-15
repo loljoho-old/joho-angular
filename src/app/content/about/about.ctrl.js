@@ -1,7 +1,7 @@
 (function() {
 'use strict';
 
-angular.module(johoApp)
+angular.module('johoApp')
   .controller('About', About);
 
 /* @ngInject */
