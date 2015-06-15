@@ -9,6 +9,7 @@ ignore/
 .tmp/
 .sass-cache/
 dist/
+src/fonts
 
 # bower and npm #
 #################

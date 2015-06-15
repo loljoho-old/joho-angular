@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    
+
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <link rel="stylesheet" href="app/vendor.css">
     <!-- bower:css -->
@@ -14,23 +14,33 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- build:css({.tmp/serve,src}) styles/app.css -->
     <!-- inject:css -->
     <!-- css files will be automatically insert here -->
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body layout="column" ng-cloak>
+  <body layout="column">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <md-content id="content" 
-                md-scroll-y 
-                flex 
-                ui-view>
+    <header layout="column"
+            ng-controller="Header as hm"
+            ng-include="'app/components/header/header.html'">
+    </header>
+
+    <md-content id="content" md-scroll-y flex ui-view>
     </md-content>
+
+<!--
+    <md-content id="content" layout="row" md-scroll-y flex ui-view></md-content>
+-->
+    <footer layout="column"
+            ng-controller="Footer as fm"
+            ng-include="'app/components/footer/footer.html'">
+    </footer>
+  
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

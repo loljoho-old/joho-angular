@@ -35,10 +35,16 @@ function configureIcons($mdIconProvider) {
     .icon('onedrive',       'assets/icons/dl/onedrive_icon_48px.svg')
 
     // Profile/Social Media
-    .icon('github',         'assets/icons/fa/github.svg'    )
-    .icon('linkedin',       'assets/icons/fa/linkedin.svg'  )
-    .icon('codepen',        'assets/icons/fa/codepen.svg'   )
-    .icon('angellist',      'assets/icons/fa/angellist.svg' );
+    .icon('github',         'assets/icons/fa/logo/github.svg'    )
+    .icon('linkedin',       'assets/icons/fa/logo/linkedin.svg'  )
+    .icon('codepen',        'assets/icons/fa/logo/codepen.svg'   )
+    .icon('angellist',      'assets/icons/fa/logo/angellist.svg' )
+
+    // Contact Icons
+    .icon('phone',          'assets/icons/fa/contact/phone.svg'     )
+    .icon('envelope',       'assets/icons/fa/contact/envelope.svg'  )
+    .icon('skype',          'assets/icons/fa/contact/skype.svg'     ) 
+    .icon('map-marker',     'assets/icons/fa/contact/map-marker.svg');
 
 }
 

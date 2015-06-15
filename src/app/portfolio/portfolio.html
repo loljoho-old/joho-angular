@@ -1,13 +1,27 @@
-<div id="home" layout="row" layout-wrap>
 
+<!-- BEGIN HEADER -->
+<header ng-include="'app/portfolio/partials/header.html'">
+</header>
+<!-- ENDOF HEADER -->
+
+
+
+<!-- BEGIN SHELL -->
+
+<md-content id="shell" flex layout-fill layout="row">
+
+
+
+  <!-- BEGIN SIDENAV-LEFT -->
   <md-sidenav class="site-sidenav md-sidenav-left"
-              md-is-locked-open="$mdMedia('gt-md')"
+              md-is-locked-open="vm.lockLeftOpen()"
               md-component-id="left"
               layout="column">
+<!--            md-is-locked-open="$mdMedia('gt-md')"-->
     <md-content class="md-whiteframe-z2 md-margin">
       <md-list>
       <md-subheader>Areas of Expertise</md-subheader>
-        <md-list-item class="md-2-line" ng-repeat="area in ctrl.areas">
+        <md-list-item class="md-2-line" ng-repeat="area in vm.areas">
           <img ng-src="{{area.icon}}" class="md-avatar">
           <div class="md-list-item-text">
             <h3>{{area.text}}</h3>
@@ -18,10 +32,15 @@
     </md-content>
   </md-sidenav>
 
+  <!-- ENDOF SIDENAV-LEFT -->
+
+
+
+  <!-- BEGIN MAIN CONTENT -->
 
   <md-content md-scroll-y id="brand" layout="column" flex>
-    <md-content class="md-whiteframe-z4 md-padding md-margin"
-                flex>
+
+    <md-content class="md-whiteframe-z4 md-padding md-margin" flex>
       <p class="brand">
         <strong>Front-End Web Developer</strong> with <strong>Back-End/Server-Side</strong> experience, including exposure to: <strong>jQuery/AJAX</strong>, <strong>AngularJS</strong> and various <strong>JavaScript</strong> and <strong>MVC frameworks</strong>; <strong>SQL/NoSQL</strong> database systems and <strong>REST API</strong> design and integration; and <strong>Responsive Web Design</strong> with an eye for <strong>Cross-Browser</strong>, <strong>Platform-Agnostic UI Development</strong>.</p>
       <p class="brand" hide>
@@ -31,19 +50,36 @@
         Sociable and inquisitive team player with a passion for learning and continuous self-improvement.  Highly detail-oriented, and well-attuned to business as well as the human psyche.  Enjoys exploring potential of new technologies.  Likes people.  Allergic to cats.
       </p>
     </md-content>
+
+  <!--
+    <md-content class="md-whiteframe-z4 md-padding md-margin" flex>
+      <md-tabs md-border-bottom md-selected="vm.selectedTab">
+        <md-tab ng-repeat="section in vm.sections">
+          <md-tab-label>
+            {{section.label}}
+          </md-tab-label>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+-->
   </md-content>
 
+  <!-- ENDOF MAIN CONTENT -->
 
+
+
+  <!-- BEGIN SIDENAV-RIGHT -->
 
   <md-sidenav class="site-sidenav md-sidenav-right"
-              md-is-locked-open="$mdMedia('gt-sm')"
+              md-is-locked-open="vm.lockRightOpen()"
               md-component-id="right"
               layout="column">
+              <!--md-is-locked-open="$mdMedia('gt-sm')">-->
 
     <md-content class="md-whiteframe-z2 md-margin">
       <md-list>
         <md-subheader>View Résumé</md-subheader>
-        <md-list-item ng-repeat="link in ctrl.links">
+        <md-list-item ng-repeat="link in vm.links">
           <img ng-src="{{link.icon}}" class="md-avatar">
           <div class="md-list-item-text">
             <p>{{link.text}}</p>
@@ -55,14 +91,27 @@
     <md-content class="md-whiteframe-z2 md-margin">
       <md-list>
         <md-subheader>Contact</md-subheader>
-        <md-list-item ng-repeat="link in ctrl.links">
-          <img ng-src="{{link.icon}}" class="md-avatar">
-          <div class="md-list-item-text">
-            <p>{{link.text}}</p>
-          </div>
+        <md-list-item ng-repeat="contact in vm.contacts">
+          <md-icon md-svg-icon="{{contact.icon}}"></md-icon>
+          
+          <p>{{contact.text}}</p>
+          
         </md-list-item>
       </md-list>
     </md-content>
   </md-sidenav>
 
-</div>
+  <!-- ENDOF SIDENAV-RIGHT -->
+
+
+
+</md-content>
+
+<!-- ENDOF SHELL -->
+
+
+
+<!-- BEGIN FOOTER -->
+<footer ng-include="'app/portfolio/partials/footer.html'">
+</footer>
+<!-- ENDOF FOOTER -->

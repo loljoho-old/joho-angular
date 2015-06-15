@@ -7,30 +7,6 @@ body {
   height: 100%;
 }
 
-.test-wrap {
-  min-height: 50vh;
-  width: 100%;
-}
-.test-block {
-  background-color: #ccc;
-  &.sm {
-    height: 64px;
-    max-height: 64px;
-    min-height: 64px;
-    width: 64px;
-    max-width: 64px;
-    min-width: 64px;
-  }
-  &.md {
-    height: 128px;
-    width: 128px;
-  }
-  &.lg {
-    height: 256px;
-    width: 256px;
-  }
-}
-
 md-sidenav.md-locked-open,
 md-sidenav.md-locked-open.md-closed,
 md-sidenav.md-locked-open.md-closed.md-sidenav-left,
