@@ -3,9 +3,10 @@
 
 angular.module('johoApp.core', [
   'ngAnimate', 
-  'ngCookies', 
+  'ngAria',
+  //'ngCookies', 
   'ngTouch', 
-  'ngSanitize', 
+  //'ngSanitize', 
   'ngResource', 
   'ui.router', 
   'ngMaterial']);

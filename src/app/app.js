@@ -1,6 +1,8 @@
 (function() {
 'use strict';
 
-angular.module('johoApp', ['johoApp.core']);
+angular.module('johoApp', [
+  'johoApp.core'
+  ]);
 
 })();

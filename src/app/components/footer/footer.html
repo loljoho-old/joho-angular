@@ -8,7 +8,8 @@
     <span>
       <md-button class="md-icon-button"
                  ng-repeat="site in vm.sites"
-                 aria-label="{{site.label}}">
+                 aria-label="{{site.label}}"
+                 ng-href="{{site.url}}">
         <md-icon md-svg-icon="{{site.icon}}"></md-icon>
       </md-button>
     </span>

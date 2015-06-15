@@ -6,37 +6,57 @@ angular.module('johoApp.core')
 
 /* @ngInject */
 function configureRoutes($stateProvider, $urlRouterProvider) {
-  $stateProvider
+  $stateProvider    
     .state('home', {
+      url: '/home',
+      templateUrl: 'app/content/home/home.html',
+      controller: 'Home',
+      controllerAs: 'ctrl'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'app/content/about/about.html',
+      controller: 'About',
+      controllerAs: 'ctrl'
+    })
+    .state('work', {
+      url: '/work',
+      templateUrl: 'app/content/work/work.html',
+      controller: 'Work',
+      controllerAs: 'ctrl'
+    });
+/*    
+    .state('/home', {
       views: {
         'content': {
           url: '/home',
-          templateUrl: 'app/content/home/index.html',
+          templateUrl: 'app/content/home/home.html',
           controller: 'Home',
           controllerAs: 'ctrl'
         }
       }
     })
-    .state('about', {
+    .state('/about', {
       views: {
         'content': {
           url: '/about',
-          templateUrl: 'app/content/about/index.html',
+          templateUrl: 'app/content/about/about.html',
           controller: 'About',
           controllerAs: 'ctrl'
         }
       }
     })
-    .state('work', {
+    .state('/work', {
       views: {
         'content': {
           url: '/work',
-          templateUrl: 'app/content/work/index.html',
+          templateUrl: 'app/content/work/work.html',
           controller: 'Work',
           controllerAs: 'ctrl'
         }
       }
     });
+*/
   $urlRouterProvider.otherwise('/home');
 }
 

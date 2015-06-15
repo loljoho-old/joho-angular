@@ -9,68 +9,67 @@ angular.module('johoApp')
     var self = this;
 
     // Areas of Expertise
-
-      self.areas = [{
-        name: 'HTML5/CSS3/JS',
-        icon: 'dhtml',
-        rank: 100
-      }, {
-        name: 'jQuery/Ajax/JSON/HTTP',
-        icon: 'ajax',
-        rank: 100
-      }, {
-        name: 'AngularJS',
-        icon: 'angular',
-        rank: 98
-      }, {
-        name: 'Node.js/npm',
-        icon: 'node',
-        rank: 93
-      }, {
-        name: 'Apache-MySQL-PHP',
-        icon: 'amp',
-        rank: 91
-      }, {
-        name: 'Bower',
-        icon: 'bower',
-        rank: 90
-      }, {
-        name: 'Responsive Design',
-        icon: 'rwd',
-        rank: 89
-      }, {
-        name: 'Amazon Web Services',
-        icon: 'aws',
-        rank: 86
-      }, {
-        name: 'Gulp/Grunt',
-        icon: 'gulp',
-        rank: 85
-      }, {
-        name: 'Sass/Scss',
-        icon: 'sass',
-        rank: 84
-      }, {
-        name: 'Git',
-        icon: 'git',
-        rank: 80
-      }, {
-        name: 'Express.js',
-        icon: 'express',
-        rank: 78
-      }, {
-        name: 'MongoDB',
-        icon: 'mongo',
-        rank: 72
-      }, {
-        name: 'Python',
-        icon: 'python',
-        rank: 65
-      }, {
-        name: 'C/C++/C#, Java',
-        icon: 'oop',
-        rank: 60
-      }];
+    self.areas = [{
+      text: 'HTML5/CSS3/JS',
+      icon: 'assets/images/thumbs/dhtml.png',
+      rank: 100
+    }, {
+      text: 'jQuery, Ajax',
+      icon: 'assets/images/thumbs/jquery.png',
+      rank: 100
+    }, {
+      text: 'AngularJS',
+      icon: 'assets/images/thumbs/angular.png',
+      rank: 98
+    }, {
+      text: 'Node.js/npm',
+      icon: 'assets/images/thumbs/node.png',
+      rank: 93
+    }, {
+      text: 'Apache-MySQL-PHP',
+      icon: 'assets/images/thumbs/amp.png',
+      rank: 91
+    }, {
+      text: 'Bower',
+      icon: 'assets/images/thumbs/bower.png',
+      rank: 90
+    }, {
+      text: 'Responsive Design',
+      icon: 'assets/images/thumbs/rwd.png',
+      rank: 85
+    }, {
+      text: 'Git',
+      icon: 'assets/images/thumbs/git.png',
+      rank: 83
+    }, {
+      text: 'Amazon Web Services',
+      icon: 'assets/images/thumbs/aws.png',
+      rank: 82
+    }, {
+      text: 'Gulp/Grunt',
+      icon: 'assets/images/thumbs/gulp.png',
+      rank: 80
+    }, {
+      text: 'Sass/Scss',
+      icon: 'assets/images/thumbs/sass.png',
+      rank: 80
+    }, {
+      text: 'Data Structures',
+      icon: 'assets/images/thumbs/data.png',
+      rank: 76
+    }, {
+      text: 'Laravel/Lumen',
+      icon: 'assets/images/thumbs/laravel.png',
+      rank: 70
+    }, {
+      text: 'Python',
+      icon: 'assets/images/thumbs/python.png',
+      rank: 62
+    }, {
+      text: 'Java, C/C++/C#',
+      icon: 'assets/images/thumbs/java.png',
+      rank: 60
+    }];
 
 
   }

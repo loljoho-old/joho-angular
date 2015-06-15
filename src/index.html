@@ -31,11 +31,15 @@
     </header>
 
     <md-content id="content" 
+                layout="row"
                 md-scroll-y 
-                ui-view="content">
+                flex
+                ui-view>
     </md-content>
 
     <section id="contact"
+             layout="row"
+             flex
              ng-include="'app/components/body/contact/contact.html'">
     </section>
 
