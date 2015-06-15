@@ -2,10 +2,10 @@
 'use strict';
 
 angular.module('johoApp')
-  .controller('About', About);
+  .controller('Home', Home);
 
 /* @ngInject */
-function About() {
+function Home() {
   
   
 }

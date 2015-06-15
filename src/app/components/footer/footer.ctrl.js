@@ -18,7 +18,7 @@ angular.module('johoApp')
     self.listItemClick = listItemClick;
 
     function listItemClick($index) {
-      self.clickedItem = items[$index];
+      self.clickedItem = self.items[$index];
       $mdBottomSheet.hide(self.clickedItem);
     }
 

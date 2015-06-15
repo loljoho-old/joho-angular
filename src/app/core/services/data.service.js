@@ -6,7 +6,7 @@ angular.module('johoApp')
 
 /* @ngInject */
 function dataService($resource, $q) {
-  var service = $resource();
+  //var service = $resource();
   var allData = {};
   // Promise-based API
   return {

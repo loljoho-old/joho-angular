@@ -5,11 +5,11 @@ angular.module('johoApp')
   .controller('View', View);
 
   /* @ngInject */
-  function View($mdSidenav, $timeout, $mdBottomSheet) {
+  function View($mdSidenav) {
     var self = this;
 
     self.openSidenav    = openSidenav;
-    self.closeSidenav   = toggleSidenav;
+    self.closeSidenav   = closeSidenav;
     self.toggleSidenav  = toggleSidenav;
 
     self.sites = [
@@ -29,36 +29,5 @@ angular.module('johoApp')
     function toggleSidenav() {
       $mdSidenav('right').toggle();
     }
-/*
-    self.showFooterSheet    = showFooterSheet;
-
-    self.openSidebarLeft    = openSidebarLeft;
-    self.closeSidebarLeft   = closeSidebarLeft;
-    self.toggleSidebarLeft  = toggleSidebarLeft;
-    
-
-    function showFooterSheet($event) {
-      $mdBottomSheet.show({
-        templateUrl:        'app/components/footer/footer-sheet.html',
-        controller:         'Footer',
-        controllerAs:       'fm',
-        targetEvent:        '$event',
-        disableParentScroll: false
-      }).then(function(clickedItem) {
-        $log.alert('Clicked on: ' + clickedItem);
-      });
-    }
-
-
-    function openSidebarLeft() {
-      $mdSidenav('left').open();
-    }
-    function closeSidebarLeft() {
-      $mdSidenav('left').close();
-    }
-    function toggleSidebarLeft() {
-      $mdSidenav('left').toggle();
-    }
-*/
   }
 })();

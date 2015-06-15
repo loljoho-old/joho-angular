@@ -6,13 +6,7 @@ angular.module('johoApp')
 
   /* @ngInject */
   function Skills() {
-    var self = this;
-
-    this.tiles = [];
-
-    /*
-     * 
-     */
+    
 
   }
 
