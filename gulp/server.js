@@ -19,6 +19,7 @@ module.exports = function(options) {
         '/bower_components': 'bower_components'
       };
     }
+    routes['/api'] = 'api';
 
     var server = {
       baseDir: baseDir,
