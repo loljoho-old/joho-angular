@@ -1,0 +1,50 @@
+{
+    "sites": [{
+            "label": "GitHub",
+            "icon": "github",
+            "url": "http://github.com/loljoho/"         
+        }, { 
+            "label": "CodePen",
+            "icon": "codepen",
+            "url": "http://codepen.io/loljoho/"         
+        }, { 
+            "label": "LinkedIn",
+            "icon": "linkedin",
+            "url": "http://linkedin.com/in/loljoho" 
+        }, { 
+            "label": "AngelList",
+            "icon": "angellist",
+            "url": "http://angel.co/loljoho"                
+        }
+    ],
+    "drives": [{
+        "label": "Google Drive",
+        "icon": "assets/images/logos/drive_icon_48px.png",
+        "link": "https://drive.google.com/folderview?id=0B9VAfEqSVO-MfnRweHFQT1dfNHRtaFpkM0J3ZW15b2FBbnhJQVJ4ZEc5OWpSRHEzSl92ZWM&usp=sharing"
+    }, {
+        "label": "Dropbox",
+        "icon": "assets/images/logos/dropbox_icon_48px.png",
+        "link": "https://www.dropbox.com/sh/nr5z44oom47pkfm/AACxoIgNtW_q0nHIOrcPZTb_a?dl=0"
+    }, {
+        "label": "OneDrive",
+        "icon": "assets/images/logos/onedrive_icon_48px.png",
+        "link": "http://1drv.ms/1dGkysf"
+    }],
+    "contacts": [{
+        "label": "Phone",
+        "icon": "phone",
+        "value": ""
+    }, {
+        "label": "Email",
+        "icon": "envelope",
+        "value": ""
+    }, {
+        "label": "Skype",
+        "icon": "skype",
+        "value": ""
+    }, {
+        "label": "Home",
+        "icon": "map-marker",
+        "value": ""
+    }]
+}
