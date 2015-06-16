@@ -42,37 +42,37 @@ function View($mdSidenav, $mdMedia, $q) {
   
   // Areas of Expertise
   self.areas = [{
-    text: 'AngularJS, Node.js, Express.js',
-    icon: 'assets/images/thumbs/angular.png',
+    text: 'AngularJS · Node.js · Express.js',
+    icon: 'assets/images/thumbs/ean.png',
     rank: 100
   }, {
-    text: 'Apache-MySQL-PHP Stack',
+    text: 'Apache · MySQL · PHP',
     icon: 'assets/images/thumbs/amp.png',
-    rank: 95
+    rank: 89
   }, {
-    text: 'Gulp Build/Task Automation',
-    icon: 'assets/images/thumbs/gulp.png',
-    rank: 86
+    text: 'Gulp · Grunt · RequireJS',
+    icon: 'assets/images/thumbs/build.png',
+    rank: 82
   }, {
     text: 'REST API Design & Integration',
     icon: 'assets/images/thumbs/json.png',
-    rank: 74
-  }, {
-    text: 'Responsive Web Design',
-    icon: 'assets/images/thumbs/rwd.png',
     rank: 70
   }, {
     text: 'CSS3, Sass/Scss',
-    icon: 'assets/images/thumbs/sass.png',
-    rank: 63
+    icon: 'assets/images/thumbs/scss.png',
+    rank: 62
   }, {
-    text: 'Git/Version Control',
+    text: 'Responsive Web Design',
+    icon: 'assets/images/thumbs/rwd.png',
+    rank: 54
+  }, {
+    text: 'Git',
     icon: 'assets/images/thumbs/git.png',
-    rank: 59
+    rank: 49
   }, {
     text: 'Amazon Web Services',
     icon: 'assets/images/thumbs/aws.png',
-    rank: 52
+    rank: 36
   }];
 
   // Profiles

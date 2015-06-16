@@ -1,26 +1,69 @@
 
 <!-- BEGIN HEADER -->
-<header ng-include="'app/portfolio/partials/header.html'">
-</header>
+<md-toolbar class="md-hue-1 md-whiteframe-z2">
+  <div class="md-toolbar-tools">
+    <span flex></span>
+    <span>
+      <h1 class="md-title">Jonathan Ho</h1>
+    </span>
+    <span hide-sm>
+      <h2 class="md-subhead">
+        Web Developer · New York NY
+      </h2>
+    </span>
+    <span flex hide-sm></span>
+  </div>
+  <div class="md-toolbar-tools" hide-gt-sm>
+    <span flex></span>
+    <span>
+      <h2 class="md-subhead">
+        Web Developer · New York NY
+      </h2>
+    </span>
+  </div>
+</md-toolbar>
 <!-- ENDOF HEADER -->
 
 
 
 <!-- BEGIN SHELL -->
 
-<md-content id="shell" flex layout-fill layout="row">
+<md-content id="shell" layout-fill layout="row">
 
 
+  <span layout="column" layout-fill hide-sm flex-md="5" flex-lg="10" flex-gt-lg="15"></span>
 
-  <!-- BEGIN SIDENAV-LEFT -->
-  <md-sidenav class="site-sidenav md-sidenav-left"
-              md-is-locked-open="vm.lockLeftOpen()"
-              md-component-id="left"
-              layout="column">
-<!--            md-is-locked-open="$mdMedia('gt-md')"-->
-    <md-content class="md-whiteframe-z2 md-margin">
-      <md-list>
-      <md-subheader>Areas of Expertise</md-subheader>
+  <md-content md-scroll-y layout="column" flex>
+
+    <md-content class="md-whiteframe-z4 md-padding md-margin" flex>
+      <p class="brand">
+        <strong>Front-End Web Developer</strong> with experienced with both <strong>Front-End</strong> and <strong>Back-End</strong> web development, including exposure to: <strong>Node.js, AngularJS</strong> and various <strong>JavaScript</strong> and <strong>MVC frameworks</strong>; <strong>jQuery</strong> and <strong>AJAX</strong>; developing, integrating and consuming <strong>RESTful APIs</strong>; and principles of <strong>Responsive Web Design</strong> by way of developing <strong>Cross-Browser</strong>, <strong>Platform-Agnostic User Interfaces</strong>.</p>
+      <p class="brand">
+        Sociable and inquisitive team player with a passion for learning and continuous self-improvement.  Highly detail-oriented; well-attuned to matters of business, and of the human psyche.  Enjoys exploring the potential of new technologies and innovations.  Likes people.  Allergic to cats.
+      </p>
+    </md-content>
+
+    <md-content class="md-whiteframe-z2 md-padding md-margin" flex layout="row">
+      <md-subheader>Résumé</md-subheader>
+
+      <ul class="buckets" layout layout-wrap layout-align="center center" flex>
+        <li flex="25" flex-md="50" flex-sm="50" ng-repeat="link in vm.links">
+          <a class="md-raised md-button" ng-href="{{link.link}}">
+            <span>{{link.text}}</span>
+          </a>
+            <md-icon class="block" md-svg-src="{{link.icon}}"></md-icon>
+        </li>
+      </ul>
+
+      <md-grid-list flex md-grid-col="3">
+      </md-grid-list>
+
+    </md-content>
+
+    <md-content class="md-whiteframe-z3 md-padding md-margin" flex layout="row">
+
+      <md-list flex="100" flex-gt-md="66">
+        <md-subheader>Areas of Expertise</md-subheader>
         <md-list-item class="md-2-line" ng-repeat="area in vm.areas">
           <img ng-src="{{area.icon}}" class="md-avatar">
           <div class="md-list-item-text">
@@ -29,53 +72,27 @@
           </div>
         </md-list-item>
       </md-list>
-    </md-content>
-  </md-sidenav>
 
-  <!-- ENDOF SIDENAV-LEFT -->
+      <md-content flex="100" flex-gt-md="33">
+        <md-subheader>Mastery In Progress</md-subheader>
 
+      </md-content>
 
-
-  <!-- BEGIN MAIN CONTENT -->
-
-  <md-content md-scroll-y id="brand" layout="column" flex>
-
-    <md-content class="md-whiteframe-z4 md-padding md-margin" flex>
-      <p class="brand">
-        <strong>Front-End Web Developer</strong> with <strong>Back-End/Server-Side</strong> experience, including exposure to: <strong>jQuery/AJAX</strong>, <strong>AngularJS</strong> and various <strong>JavaScript</strong> and <strong>MVC frameworks</strong>; <strong>SQL/NoSQL</strong> database systems and <strong>REST API</strong> design and integration; and <strong>Responsive Web Design</strong> with an eye for <strong>Cross-Browser</strong>, <strong>Platform-Agnostic UI Development</strong>.</p>
-      <p class="brand" hide>
-        Possesses twenty years of interaction with computer systems and web technologies, culminating in an extraordinarily astute ability in learning new technologies, concepts, and languages.
-      </p>
-      <p class="brand">
-        Sociable and inquisitive team player with a passion for learning and continuous self-improvement.  Highly detail-oriented, and well-attuned to business as well as the human psyche.  Enjoys exploring potential of new technologies.  Likes people.  Allergic to cats.
-      </p>
     </md-content>
 
-  <!--
-    <md-content class="md-whiteframe-z4 md-padding md-margin" flex>
-      <md-tabs md-border-bottom md-selected="vm.selectedTab">
-        <md-tab ng-repeat="section in vm.sections">
-          <md-tab-label>
-            {{section.label}}
-          </md-tab-label>
-        </md-tab>
-      </md-tabs>
-    </md-content>
--->
   </md-content>
 
-  <!-- ENDOF MAIN CONTENT -->
+  <span layout="column" layout-fill hide-sm flex-md="5" flex-lg="10" flex-gt-lg="15"></span>
 
-
+</md-content>
 
   <!-- BEGIN SIDENAV-RIGHT -->
 
+<!--
   <md-sidenav class="site-sidenav md-sidenav-right"
-              md-is-locked-open="vm.lockRightOpen()"
+              md-is-locked-open="$mdMedia('gt-md')"
               md-component-id="right"
               layout="column">
-              <!--md-is-locked-open="$mdMedia('gt-sm')">-->
-
     <md-content class="md-whiteframe-z2 md-margin">
       <md-list>
         <md-subheader>View Résumé</md-subheader>
@@ -100,12 +117,12 @@
       </md-list>
     </md-content>
   </md-sidenav>
+-->
 
   <!-- ENDOF SIDENAV-RIGHT -->
 
 
 
-</md-content>
 
 <!-- ENDOF SHELL -->
 
