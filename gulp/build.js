@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 
 var $ = require('gulp-load-plugins')({
-  pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
+  pattern: ['gulp-*', 'main-bower-files', 'imagemin-pngquant', 'uglify-save-license', 'del']
 });
 
 module.exports = function(options) {
@@ -35,6 +35,7 @@ module.exports = function(options) {
     var htmlFilter = $.filter('*.html');
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
+    var pngFilter = $.filter('**/*.png');
     var assets;
 
     return gulp.src(options.tmp + '/serve/*.html')
@@ -72,10 +73,20 @@ module.exports = function(options) {
       .pipe(gulp.dest(options.dist + '/fonts/'));
   });
 
+  gulp.task('images', function() {
+    return gulp.src(options.src + '/**/*.png')
+      .pipe($.imagemin({
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [$.imageminPngquant()]
+      }))
+      .pipe(gulp.dest(options.dist + '/'));
+  });
+
   gulp.task('other', function () {
     return gulp.src([
       options.src + '/**/*',
-      '!' + options.src + '/**/*.{html,css,js,scss}'
+      '!' + options.src + '/**/*.{html,css,js,scss,png}'
     ])
       .pipe(gulp.dest(options.dist + '/'));
   });
@@ -84,5 +95,5 @@ module.exports = function(options) {
     $.del([options.dist + '/', options.tmp + '/'], done);
   });
 
-  gulp.task('build', ['html', 'fonts', 'other']);
+  gulp.task('build', ['html', 'fonts', 'images', 'other']);
 };
