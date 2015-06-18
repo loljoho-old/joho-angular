@@ -16,6 +16,12 @@ function configureRoutes($stateProvider, $urlRouterProvider) {
       templateUrl: 'app/layout/resume/resume.html',
       controller: 'ResumeCtrl',
       controllerAs: 'sm'
+    })
+    .state('demo', {
+      url: '/demo',
+      templateUrl: 'app/components/demo.html',
+      controller: 'ResumeCtrl',
+      controllerAs: 'sm'
     });
   $urlRouterProvider.otherwise('/resume');
 }
