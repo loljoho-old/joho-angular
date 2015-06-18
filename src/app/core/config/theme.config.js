@@ -28,7 +28,7 @@ function configureTheme($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('grey')
     .accentPalette('red')
-    .warnPalette('purple');
+    .warnPalette('deep-orange');
 }
 
 })();

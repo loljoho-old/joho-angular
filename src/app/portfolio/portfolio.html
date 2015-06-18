@@ -56,6 +56,12 @@
       </ul>
 
       <md-grid-list flex md-grid-col="3">
+        <md-grid-tile ng-repeat="link in vm.links">
+          <md-button class="md-grid-item-content" ng-href="{{link.link}}">
+            <md-icon md-svg-src="link.icon"></md-icon>
+            <md-grid-tile-footer><h3> {{ link.text }} </h3></md-grid-tile-footer>
+          </md-button>
+        </md-grid-tile>
       </md-grid-list>
 
     </md-content>

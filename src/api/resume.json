@@ -1,62 +1,38 @@
 {
     "basics": {
-        "name": "Dr. Leo Spaceman, MD",
-        "title": "Physician",
+        "name": "Jonathan Ho",
+        "title": "Web Developer",
         "subtitle": "New York NY",
         "brand": [
-            "<strong>Web Developer</strong> experienced with both <strong>Front-End</strong> and <strong>Back-End</strong> web development, including exposure to: <strong>Node.js, AngularJS</strong> and various <strong>JavaScript</strong> and <strong>MVC frameworks</strong>; <strong>jQuery</strong> and <strong>AJAX</strong>; developing, integrating and consuming <strong>RESTful APIs</strong>; and principles of <strong>Responsive Web Design</strong> by way of developing <strong>Cross-Browser</strong>, <strong>Platform-Agnostic User Interfaces</strong>.",
-            "Sociable and inquisitive team player with a passion for learning and continuous self-improvement.  Highly detail-oriented; well-attuned to matters of business, and of the human psyche.  Enjoys exploring the potential of new technologies and innovations.  Likes people.  Allergic to cats."
+          "<strong>Web Developer</strong> experienced with both <strong>Front-End</strong> and <strong>Back-End</strong> web development, including exposure to: <strong>Node.js, AngularJS</strong> and various <strong>JavaScript</strong> and <strong>MVC frameworks</strong>; <strong>jQuery</strong> and <strong>AJAX</strong>; developing, integrating and consuming <strong>RESTful APIs</strong>; and principles of <strong>Responsive Web Design</strong> by way of developing <strong>Cross-Browser</strong>, <strong>Platform-Agnostic User Interfaces</strong>.",
+          "Sociable and inquisitive team player with a passion for learning and continuous self-improvement.  Highly detail-oriented; well-attuned to matters of business, and of the human psyche.  Enjoys exploring the potential of new technologies and innovations.  Likes people.  Allergic to cats."
         ]
     },
     "profiles": [{
         "label": "LinkedIn",
         "icon": "linkedin",
-        "link": "http://linkedin.com/in/leospaceman" 
+        "link": "http://linkedin.com/in/loljoho" 
     }, { 
         "label": "GitHub",
         "icon": "github",
-        "link": "http://github.com/leospaceman/"         
-    }, {  
-        "label": "AngelList",
-        "icon": "angellist",
-        "link": "http://angel.co/leospaceman"                
+        "link": "http://github.com/loljoho/"         
+    }, { 
+        "label": "CodePen",
+        "icon": "codepen",
+        "link": "http://codepen.io/loljoho/"         
     }],
     "drives": [{
         "label": "Google Drive",
         "icon": "assets/images/logos/drive_icon_48px.png",
-        "link": "https://drive.google.com/"
+        "link": "https://drive.google.com/folderview?id=0B9VAfEqSVO-MfnRweHFQT1dfNHRtaFpkM0J3ZW15b2FBbnhJQVJ4ZEc5OWpSRHEzSl92ZWM&usp=sharing"
     }, {
         "label": "Dropbox",
         "icon": "assets/images/logos/dropbox_icon_48px.png",
-        "link": "https://www.dropbox.com/"
+        "link": "https://www.dropbox.com/sh/nr5z44oom47pkfm/AACxoIgNtW_q0nHIOrcPZTb_a?dl=0"
     }, {
         "label": "OneDrive",
         "icon": "assets/images/logos/onedrive_icon_48px.png",
-        "link": "http://1drv.ms/"
-    }],
-    "contacts": [{
-        "label": "Phone",
-        "icon": "phone",
-        "value": "1-646-123-4567"
-    }, {
-        "label": "Email",
-        "icon": "email",
-        "value": "leo@spaceman.com"
-    }, {
-        "label": "Location",
-        "icon": "location",
-        "value": "New York NY"
-    }],    
-    "education": [{
-        "title": "Ho Chi Minh School of Medicine",
-        "subtitle": "Ho Chi Minh City, Vietnam",
-        "description": "Completed three semesters towards a Doctor of Medicine degree",
-        "dates": "2007 - 2008, 2010"
-    }, {
-        "title": "University of American Samoa",
-        "subtitle": "Pago Pago, American Samoa",
-        "description": "Completed five semesters in Engineering and Computer Science",
-        "dates": "2009 - 2011"
+        "link": "http://1drv.ms/1dGkysf"
     }],
     "expertise": [{
         "text": "AngularJS, Node.js, Express.js",
@@ -90,6 +66,33 @@
         "text": "Amazon Web Services",
         "icon": "assets/images/thumbs/aws.png",
         "rank": 38
+    }],
+    "contacts": [{
+        "label": "Phone",
+        "icon": "phone",
+        "value": "1-929-400-7843"
+    }, {
+        "label": "Email",
+        "icon": "email",
+        "value": "joho@joho.io"
+    }, {
+        "label": "Location",
+        "icon": "location",
+        "value": "New York NY"
+    }],    
+    "education": [{
+        "title": "Rutgers, the State University of New Jersey",
+        "subtitle": "New Brunswick, NJ",
+        "description": "Completed three semesters towards a B.A. in History",
+        "dates": "2007 - 2008, 2010"
+    }, {
+        "title": "Raritan Valley Community College",
+        "subtitle": "North Branch, NJ",
+        "description": "Completed five semesters in Engineering and Computer Science",
+        "dates": "2009 - 2011"
+    }, {
+        "title": "Professional Development",
+        "subtitle": ""
     }],
     "skills": [
         

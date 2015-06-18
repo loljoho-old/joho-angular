@@ -1,0 +1,23 @@
+<md-toolbar class="md-accent md-hue-3">
+  <div class="md-toolbar-tools">
+    <span flex></span>
+      <h2 class="headline">Qualifications</h2>
+    <span flex></span>
+  </div>
+</md-toolbar>
+
+<md-content class="md-padding md-margin" 
+            layout="row" 
+            layout-align="center start">
+  <md-list flex-sm="100" flex-md="80" flex-gt-md="70">
+    <md-subheader>Areas of Expertise</md-subheader>
+    <md-list-item class="md-2-line" 
+                  ng-repeat="area in sm.resume.expertise">
+      <img ng-src="{{ area.icon }}" class="md-avatar">
+      <div class="md-list-item-text">
+        <h3>{{ area.text }}</h3>
+        <md-progress-linear class="md-accent" md-mode="determinate" value="{{area.rank}}"></md-progress-linear>
+      </div>
+    </md-list-item>
+  </md-list>
+</md-content>

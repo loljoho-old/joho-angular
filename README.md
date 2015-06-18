@@ -1,3 +1,46 @@
+## TASKLIST
+
+ - http://json-schema.org/
+ - http://www.w3.org/
+
+ https://www.edx.org/course/learn-html5-w3c-w3cx-html5-1x?utm_source=w3c&utm_medium=AdUnit&utm_content=CoursePage&utm_campaign=CoursePage
+
+## Data Service
+
+**Controller Function:**
+
+```js
+function setResume() {
+  self.resume = dataService.get().$promise
+    .then(function(response) {
+      self.resume = response;
+    }, function(errorMsg) {
+      self.resume = errorMsg;
+    });
+  return self.resume;
+}
+```
+
+**Templating:**
+
+```html
+<!-- Basics -->
+<h1>
+  {{ vm.resume.basics.name }}
+  <small>
+    {{ vm.resume.basics.title }}
+  </small>
+</h1>
+
+<!-- Brand -->
+<p ng-repeat="paragraph in vm.resume.basics.brand">{{ paragraph }}</p>
+
+<!-- Profiles -->
+
+```
+
+
+
 ## Testing
 
  - Selenium & WebDriver (?)

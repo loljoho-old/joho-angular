@@ -18,7 +18,7 @@
   <!-- endbuild -->
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic" rel="stylesheet">
   <!-- build:css({.tmp/serve,src}) styles/app.css -->
   <!-- inject:css -->
   <!-- css files will be automatically insert here -->
@@ -31,10 +31,16 @@
     <![endif]-->
 
     <md-content id="content" 
+                class="shell"
                 md-scroll-y 
-                flex 
+                flex
                 ui-view>
     </md-content>
+
+    <md-button class="md-fab md-fab-bottom-right fixed">
+      <md-icon md-svg-icon="chevron-up"></md-icon>
+      <md-tooltip>Top of Page</md-tooltip>
+    </md-button>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

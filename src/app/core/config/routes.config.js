@@ -10,8 +10,14 @@ function configureRoutes($stateProvider, $urlRouterProvider) {
     .state('home', {
       url: '/home',
       templateUrl: 'app/portfolio/portfolio.html'
+    })
+    .state('resume', {
+      url: '/resume',
+      templateUrl: 'app/layout/resume/resume.html',
+      controller: 'ResumeCtrl',
+      controllerAs: 'sm'
     });
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/resume');
 }
 
 })();

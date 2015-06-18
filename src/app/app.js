@@ -2,7 +2,8 @@
 'use strict';
 
 angular.module('johoApp', [
-  'johoApp.core'
+    'johoApp.core',
+    'johoApp.layout'
   ]);
 
 })();

@@ -27,12 +27,8 @@ function configureIcons($mdIconProvider) {
     .icon('arrow-left',     'assets/icons/md/arrow-left.svg'    )
     .icon('arrow-right',    'assets/icons/md/arrow-right.svg'   )
     .icon('chevron-left',   'assets/icons/md/chevron-left.svg'  )
+    .icon('chevron-up',     'assets/icons/md/chevron-up.svg'    )
     .icon('chevron-right',  'assets/icons/md/chevron-right.svg' )
-
-    // Cloud Storage Icons
-    .icon('gdrive',         'assets/icons/dl/drive_icon_48px.svg'   )
-    .icon('dropbox',        'assets/icons/dl/dropbox_icon_48px.svg' )
-    .icon('onedrive',       'assets/icons/dl/onedrive_icon_48px.svg')
 
     // Profile/Social Media
     .icon('github',         'assets/icons/fa/logo/github.svg'    )
@@ -41,10 +37,9 @@ function configureIcons($mdIconProvider) {
     .icon('angellist',      'assets/icons/fa/logo/angellist.svg' )
 
     // Contact Icons
-    .icon('phone',          'assets/icons/fa/contact/phone.svg'     )
-    .icon('envelope',       'assets/icons/fa/contact/envelope.svg'  )
-    .icon('skype',          'assets/icons/fa/contact/skype.svg'     ) 
-    .icon('map-marker',     'assets/icons/fa/contact/map-marker.svg');
+    .icon('email',          'assets/icons/fa/contact/envelope.svg'  )
+    .icon('location',       'assets/icons/fa/contact/map-marker.svg')
+    .icon('phone',          'assets/icons/fa/contact/phone.svg'     );
 
 }
 

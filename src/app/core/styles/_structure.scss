@@ -7,6 +7,34 @@ body {
   height: 100%;
 }
 
+header {
+  md-toolbar {
+    .md-toolbar-tools {
+      margin: 8px 0;
+      &.md-toolbar-tools-bottom {
+        margin-bottom: 0px;
+      }
+      .md-button {
+        md-icon {
+          margin: 0 4px 2px 0;
+        }
+        span {
+          font-size: 15px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+section {
+  md-content {
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+}
+
 md-sidenav.md-locked-open,
 md-sidenav.md-locked-open.md-closed,
 md-sidenav.md-locked-open.md-closed.md-sidenav-left,

@@ -12,3 +12,6 @@ angular.module('johoApp.core', [
   'ngMaterial']);
 
 })();
+//  function lockRightOpen() {
+//    return $mdMedia('gt-sm') && self.lockedRight ? true : false;
+//  }

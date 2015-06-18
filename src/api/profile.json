@@ -1,4 +1,13 @@
 {
+    "basics": {
+        "name": "Jonathan Ho",
+        "title": "Web Developer",
+        "address": [
+            "New York, NY"
+        ],
+        "email": "joho@joho.us",
+        "phone": "929-400-7843"
+    },
     "sites": [{
             "label": "GitHub",
             "icon": "github",
@@ -33,18 +42,14 @@
     "contacts": [{
         "label": "Phone",
         "icon": "phone",
-        "value": ""
+        "value": "1-929-400-7843"
     }, {
         "label": "Email",
-        "icon": "envelope",
-        "value": ""
-    }, {
-        "label": "Skype",
-        "icon": "skype",
-        "value": ""
+        "icon": "email",
+        "value": "joho@joho.io"
     }, {
         "label": "Home",
-        "icon": "map-marker",
-        "value": ""
+        "icon": "address",
+        "value": "New York NY"
     }]
 }

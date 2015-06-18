@@ -1,0 +1,25 @@
+<!--
+<md-divider flex-gt-sm="75"></md-divider>
+-->
+<md-content class="md-padding md-margin" 
+            layout="row" 
+            layout-wrap
+            layout-align="center start">
+
+  <md-list flex-sm="100" flex-md="40" flex-gt-md="35">
+    <md-subheader>Download Résumé</md-subheader>
+    <md-list-item ng-repeat="drive in sm.resume.drives">
+      <img ng-src="{{ drive.icon }}" class="md-avatar">
+      <p>{{ drive.label }}</p>
+    </md-list-item>
+  </md-list>
+
+  <md-list flex-sm="100" flex-md="40" flex-gt-md="35">
+    <md-subheader>Profiles</md-subheader>
+    <md-list-item ng-repeat="profile in sm.resume.profiles">
+      <md-icon md-svg-icon="{{ profile.icon }}"></md-icon>
+      <p>{{ profile.label }}</p>
+    </md-list-item>
+  </md-list>
+
+</md-content>
