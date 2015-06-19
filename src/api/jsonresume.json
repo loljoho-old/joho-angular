@@ -1,0 +1,135 @@
+{
+    "basics": {
+        "name": "Jonathan Ho",
+        "label": "Web Developer",
+        "picture": "",
+        "email": "joho@joho.io",
+        "phone": "(929) 400-7843",
+        "website": "http://joho.io",
+        "summary": "Front-End Developer with Back-End proficiency with strong background in Computer Science and Information Technology. Specialties include: Node.js, AngularJS and MVC Frameworks; REST API development and integration; and Cross-Browser/Platform, Mobile-Friendly, Responsive Web Design. Sociable and detail-oriented team player with a passion for continuous learning and self-improvement. Values business and interpersonal relationships; enjoys the challenge of exploring the potential of new technologies.  Likes people.  Allergic to cats.",
+        "subtitle": "New York NY",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "New York City",
+            "countryCode": "US",
+            "region": ""
+        },
+        "profiles": [{
+            "network": "LinkedIn",
+            "username": "loljoho",
+            "url": "https://linkedin.com/in/loljoho" 
+        }, { 
+            "network": "GitHub",
+            "username": "loljoho",
+            "url": "https://github.com/loljoho/"         
+        }, { 
+            "network": "AngelList",
+            "username": "loljoho",
+            "url": "https://angel.co/loljoho"         
+        }]
+    },
+    "education": [{
+        "institution": "Rutgers, the State University of New Jersey",
+        "location": "New Brunswick, NJ",
+        "summary": "Completed three semesters towards a B.A. in History",
+        "dates": "2007 - 2008, 2010"
+    }, {
+        "institution": "Raritan Valley Community College",
+        "location": "North Branch, NJ",
+        "summary": "Completed five semesters in Engineering and Computer Science",
+        "dates": "2009 - 2011"
+    }],
+    "work": [{
+        "company": "",
+        "position": "",
+        "location": "",
+        "dates": "",
+        "summary": "",
+        "highlights": []
+    }, {
+        "company": "",
+        "position": "",
+        "location": "",
+        "dates": "",
+        "summary": "",
+        "highlights": []
+    }],
+    "drives": [{
+        "label": "Google Drive",
+        "icon": "google",
+        "link": "https://drive.google.com/folderview?id=0B9VAfEqSVO-MfnRweHFQT1dfNHRtaFpkM0J3ZW15b2FBbnhJQVJ4ZEc5OWpSRHEzSl92ZWM&usp=sharing"
+    }, {
+        "label": "Dropbox",
+        "icon": "dropbox",
+        "link": "https://www.dropbox.com/sh/nr5z44oom47pkfm/AACxoIgNtW_q0nHIOrcPZTb_a?dl=0"
+    }, {
+        "label": "OneDrive",
+        "icon": "onedrive",
+        "link": "http://1drv.ms/1dGkysf"
+    }],
+    "skills": [{
+        "name": "AngularJS, Node.js, Express.js",
+        "icon": "assets/images/thumbs/ean.png",
+        "level": 100
+    }, {
+        "name": "Apache, MySQL, PHP",
+        "icon": "assets/images/thumbs/amp.png",
+        "level": 89
+    }, {
+        "name": "Gulp, Grunt, RequireJS",
+        "icon": "assets/images/thumbs/build.png",
+        "level": 82
+    }, {
+        "name": "REST API Design & Integration",
+        "icon": "assets/images/thumbs/json.png",
+        "level": 70
+    }, {
+        "name": "CSS3, Sass/Scss",
+        "icon": "assets/images/thumbs/scss.png",
+        "level": 62
+    }, {
+        "name": "Responsive Web Design",
+        "icon": "assets/images/thumbs/rwd.png",
+        "level": 54
+    }, {
+        "name": "Git",
+        "icon": "assets/images/thumbs/git.png",
+        "level": 49
+    }, {
+        "name": "Amazon Web Services",
+        "icon": "assets/images/thumbs/aws.png",
+        "level": 38
+    }],
+    "projects": [{
+        "name": "Paper Résumé",
+        "site": "http://joho.io",
+        "code": "https://github.com/loljoho/paper-resume",
+        "summary": "Front-End Web Developer portfolio and résumé web application to present JSON data",
+        "highlights": [
+            "Developed AngularJS project to present résumé content and showcase Front-End Web Developer skills and qualifications",
+            "Tailored rich UI/UX components with HTML5 and Scss stylesheets to comply with Google's Material Design specification",
+            "Optimised web performance with HTML, CSS, and JavaScript minification and image compression"
+        ]
+    }, {
+        "name": "poppyGP Player",
+        "site": "http://poppy.gq/stream",
+        "code": "https://github.com/gpquery/poppygp",
+        "summary": "Single-page JavaScript application built around a 24/7 video stream channel and IRC webchat for Reddit Formula 1 racing enthusiasts' community",
+        "highlights": [
+            "Designed and developed a fully-responsive, cross-platform, cross-browser, mobile and tablet-friendly front-end Angular video application",
+            "Maintained back- and front-end interfaces, gaining continuous increases in frequency, duration, and geographic scope of visits",
+            "Alleviated sudden and overwhelming 400% spike in traffic by configuring and launching an AWS EC2 instance, and maintained consistency of service while performing migration from previous webhost"
+        ]
+    }, {
+        "name": "GPQuery",
+        "site": "http://gpquery.github.io",
+        "code": "https://github.com/gpquery/dashboard",
+        "summary": "Statistical analysis and data visualisation web application for Grand Prix Racing records since 1950",
+        "highlights": [
+            "Integrated D3.js data visualisation library with AngularJS to render dynamic graphical representations of data",
+            "Developed data services with Angular-Resource to retrieve data via HTTP requests to RESTful services for JSON-encoded responses",
+            "Streamlined workflow with Gulp and Browser-Sync to automate testing and build tasks with a local development environment"
+        ]
+    }]
+}
