@@ -23,15 +23,15 @@
     }],
     "drives": [{
         "label": "Google Drive",
-        "icon": "assets/images/logos/drive_icon_48px.png",
+        "icon": "google",
         "link": "https://drive.google.com/"
     }, {
         "label": "Dropbox",
-        "icon": "assets/images/logos/dropbox_icon_48px.png",
+        "icon": "dropbox",
         "link": "https://www.dropbox.com/"
     }, {
         "label": "OneDrive",
-        "icon": "assets/images/logos/onedrive_icon_48px.png",
+        "icon": "onedrive",
         "link": "http://1drv.ms/"
     }],
     "contacts": [{

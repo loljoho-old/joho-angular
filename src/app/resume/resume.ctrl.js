@@ -1,7 +1,7 @@
 (function() {
 'use strict';
   
-angular.module('johoApp.layout')
+angular.module('johoApp.resume', [])
   .controller('ResumeCtrl', ResumeCtrl);
 
 /* @ngInject */
@@ -13,7 +13,6 @@ function ResumeCtrl(dataService, $log) {
   function setResume() {
     self.resume = dataService.get().$promise
       .then(function(response) {
-        $log.info('dataService responded with ' + response);
         self.resume = response;
       }, function(errorMsg) {
         $log.warn('dataService responded with ' + errorMsg);

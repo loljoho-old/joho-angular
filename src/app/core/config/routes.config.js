@@ -7,19 +7,9 @@ angular.module('johoApp.core')
 /* @ngInject */
 function configureRoutes($stateProvider, $urlRouterProvider) {
   $stateProvider    
-    .state('home', {
-      url: '/home',
-      templateUrl: 'app/portfolio/portfolio.html'
-    })
     .state('resume', {
       url: '/resume',
-      templateUrl: 'app/layout/resume/resume.html',
-      controller: 'ResumeCtrl',
-      controllerAs: 'sm'
-    })
-    .state('demo', {
-      url: '/demo',
-      templateUrl: 'app/components/demo.html',
+      templateUrl: 'app/resume/resume.html',
       controller: 'ResumeCtrl',
       controllerAs: 'sm'
     });

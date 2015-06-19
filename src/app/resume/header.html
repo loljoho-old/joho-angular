@@ -1,0 +1,24 @@
+<md-toolbar class="md-tall md-hue-3">
+
+  <div class="md-toolbar-tools">
+    <span flex></span>
+    <h1 class="md-display-1">{{ sm.resume.basics.name }}</h1>  
+    <span flex></span>
+  </div>
+
+  <div class="md-toolbar-tools md-toolbar-tools-bottom">
+    <span flex></span>
+    <span>
+      <md-button class="md-button" 
+                 ng-repeat-start="contact in sm.resume.contacts" 
+                 aria-label="{{ contact.label }}">
+        <md-icon md-svg-icon="{{ contact.icon }}"></md-icon>
+        <span hide-sm>{{ contact.value }}</span>
+        <md-tooltip hide-gt-sm>{{ contact.value }}</md-tooltip>
+      </md-button>
+      <span flex ng-if="!$last" ng-repeat-end></span>
+    </span>
+    <span flex></span>
+  </div>
+
+</md-toolbar>

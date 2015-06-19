@@ -3,7 +3,8 @@
 
 angular.module('johoApp', [
     'johoApp.core',
-    'johoApp.layout'
+    'johoApp.resume',
+    'johoApp.pdf'
   ]);
 
 })();

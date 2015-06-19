@@ -5,11 +5,26 @@ angular.module('johoApp.core')
   .controller('View', View);
 
 /* @ngInject */
-function View() {
-  var vm = this;
+function View(dataService, $mdSidenav, $log) {
+  var self = this;
 
-  // Window Title
-  //vm.title = 'Jonathan Ho · Web Developer · New York NY';
-  vm.title = 'Dr. Leo Spaceman, M.D. · New York NY';
+  self.title = setTitle();
+
+  self.toggleSidenav = toggleSidenav;
+
+  function setTitle() {
+    self.title = dataService.get().$promise
+      .then(function(response) {
+        self.title = response.basics.name + ' · ' + response.basics.title + ' · ' + response.basics.subtitle;
+      }, function(errorMsg) {
+        $log.error('Error in fetching page title: ' + errorMsg);
+        self.title = 'Material CV';
+      });
+    return self.title;
+  }
+
+  function toggleSidenav() {
+    $mdSidenav('right').toggle();
+  }
 }
 })();

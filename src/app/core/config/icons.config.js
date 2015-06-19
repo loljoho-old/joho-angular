@@ -12,6 +12,7 @@ function configureIcons($mdIconProvider) {
     .icon('face',           'assets/icons/md/face.svg'    )
     .icon('code',           'assets/icons/md/code.svg'    )
     .icon('school',         'assets/icons/md/school.svg'  )
+    
     .icon('phone',          'assets/icons/md/phone.svg'   )
     .icon('work',           'assets/icons/md/work.svg'    )
     .icon('home',           'assets/icons/md/home.svg'    )
@@ -33,8 +34,10 @@ function configureIcons($mdIconProvider) {
     // Profile/Social Media
     .icon('github',         'assets/icons/fa/logo/github.svg'    )
     .icon('linkedin',       'assets/icons/fa/logo/linkedin.svg'  )
-    .icon('codepen',        'assets/icons/fa/logo/codepen.svg'   )
     .icon('angellist',      'assets/icons/fa/logo/angellist.svg' )
+    .icon('google',         'assets/icons/fa/logo/google.svg'    )
+    .icon('dropbox',        'assets/icons/fa/logo/dropbox.svg'   )
+    .icon('onedrive',       'assets/icons/fa/logo/onedrive.svg'  )
 
     // Contact Icons
     .icon('email',          'assets/icons/fa/contact/envelope.svg'  )

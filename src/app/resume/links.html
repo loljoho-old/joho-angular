@@ -1,0 +1,34 @@
+<div layout="row" layout-align="center start">
+
+  <md-toolbar class="md-accent md-hue-3 md-whiteframe-z2" 
+              flex="100">
+
+    <div class="md-toolbar-tools">
+
+      <span flex-md="10" flex-gt-md="15"></span>
+
+      <md-button class="md-icon-button"
+                 ng-repeat="drive in sm.resume.drives">
+        <md-icon md-svg-icon="{{ drive.icon }}"
+                 style="color: #e6e6e6;">
+        </md-icon>
+        <md-tooltip>Download Résumé from {{ drive.label }}</md-tooltip>
+      </md-button>
+
+      <span flex></span>
+
+      <md-button class="md-icon-button" 
+                 ng-repeat="profile in sm.resume.profiles">
+        <md-icon md-svg-icon="{{ profile.icon }}"
+                 style="color: #e6e6e6;">
+        </md-icon>
+        <md-tooltip>View Profile on {{ profile.label }}</md-tooltip>
+      </md-button>
+
+      <span flex-md="10" flex-gt-md="15"></span>
+
+    </div>
+
+  </md-toolbar>
+
+</div>

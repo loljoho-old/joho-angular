@@ -1,0 +1,18 @@
+md-toolbar {
+  &.banner {
+    background-color: #ffebee;
+  }
+  &.md-hue-gradient {
+    //rgb(213,0,0);
+    //rgb(66,66,66);
+  }
+  > md-content {
+    background-color: transparent;
+  }
+}
+
+md-button {
+  &.fixed {
+    position: fixed;
+  }
+}
