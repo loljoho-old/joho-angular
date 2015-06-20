@@ -72,7 +72,7 @@ module.exports = function(options) {
       .pipe($.flatten())
       .pipe(gulp.dest(options.dist + '/fonts/'));
   });
-
+  
   gulp.task('images', function() {
     return gulp.src(options.src + '/**/*.png')
       .pipe($.imagemin({

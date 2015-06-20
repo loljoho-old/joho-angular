@@ -6,12 +6,17 @@ angular.module('johoApp.core')
 
 /* @ngInject */
 function dataService($resource) {
-  var service = $resource('api/:section.json', 
-    { section: 'test' }, 
+  var service = $resource('api/:section.json', { section: 'test' }, 
     {
-      getTestSection: { 
-        method: 'GET' 
-      }
+      getTestSection  : { 
+        method: 'GET'
+      },
+      getRealResume   : {
+        method: 'GET',  params: { section: 'resume'     }
+      },
+      getJsonResume   : {
+        method: 'GET',  params: { section: 'jsonresume' }
+      } 
   });
 
   return service;

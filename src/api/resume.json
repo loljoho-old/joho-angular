@@ -87,9 +87,39 @@
         "description": "Completed five semesters in Engineering and Computer Science",
         "dates": "2009 - 2011"
     }],
-    "skills": [
-        
-    ],
+    "skills": [{
+        "name": "Web Development",
+        "level": "",
+        "keywords": [
+            "HTML5", "CSS3/Sass/Scss", "Javascript/jQuery/Ajax",
+            "REST APIs", "HTTP", "JSON",
+            "PHP", "MySQL",
+            "Responsive Design", "Web Standards"
+        ]
+    }, {
+        "name": "Javascript",
+        "level": "",
+        "keywords": [
+            "AngularJS", "Node.js/npm", "Express.js", "Sails.js",
+            "Bower", "Gulp", "Grunt",
+            "Karma", "Jasmine", "Protractor"
+        ]
+    }, {
+        "name": "Tools & Platforms",
+        "level": "",
+        "keywords": [
+            "Git", "Travis CI",
+            "Linux", "OS X", "Windows", 
+            "Apache", "Amazon Web Services"
+        ]
+    }, {
+        "name": "Miscellaneous",
+        "level": "",
+        "keywords": [
+            "C/C++/C#", "Java", "Python/Django",
+            "Object-Oriented Programming", "Object-Relational Mapping"
+        ]
+    }],
     "projects": [{
         "name": "Material-CV",
         "site": "http://joho.io",

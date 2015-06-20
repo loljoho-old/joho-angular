@@ -12,8 +12,14 @@ function configureRoutes($stateProvider, $urlRouterProvider) {
       templateUrl: 'app/resume/resume.html',
       controller: 'ResumeCtrl',
       controllerAs: 'sm'
+    })
+    .state('jsonresume', {
+      url: '/jsonresume',
+      templateUrl: 'app/jsonresume/jsonresume.html',
+      controller: 'MainCtrl',
+      controllerAs: 'sm'
     });
-  $urlRouterProvider.otherwise('/resume');
+  $urlRouterProvider.otherwise('/jsonresume');
 }
 
 })();

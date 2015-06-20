@@ -25,17 +25,115 @@
   <!-- endinject -->
   <!-- endbuild -->
 </head>
+  <!--
   <body layout="column" ng-cloak>
+  -->
+  <body layout="row" ng-cloak>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <md-content id="content" 
-                class="shell"
-                md-scroll-y 
-                flex
-                ui-view>
-    </md-content>
+    <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z4"
+                md-component-id="left"
+                md-is-locked-open="$mdMedia('gt-sm')">
+
+      <header style="background-color:rgb(213, 0, 0); 
+                          text-align:center;
+                          padding-top: 12px;">
+        <img src="http://placehold.it/128/d0d0d0.png"
+             style="height:128px; 
+                    width:128px;
+                    margin:0 auto;
+                    border-radius: 64px;">
+      </header>
+                    
+      <md-toolbar class="md-medium-tall md-accent md-hue-3">
+        <div class="md-toolbar-tools">
+          <span flex></span>
+          <h1 class="md-display-1">{{ vm.resume.basics.name }}</h1>
+          <span flex></span>
+        </div>
+        <div class="md-toolbar-tools md-toolbar-tools-bottom">
+          <span flex></span>
+          <small>
+            {{ vm.resume.basics.label }}
+          </small>
+          <span flex></span>
+        </div>
+      </md-toolbar>
+
+      <md-content flex>
+        <md-list>
+          <md-list-item class="md-clickable"
+                        ng-click="vm.contactWith(email)">
+            <md-icon class="material-icons">&#xE0BE;</md-icon>
+            <p>{{ vm.resume.basics.email }}</p>
+          </md-list-item>
+          <md-list-item class="md-clickable"
+                        ng-click="vm.contactWith(phone)">
+            <md-icon class="material-icons">&#xE0CD;</md-icon>
+            <p>{{ vm.resume.basics.phone }}</p>
+          </md-list-item>
+          <md-list-item class="md-clickable"
+                        ng-click="vm.contactWith(website)">
+            <md-icon class="material-icons">&#xE895;</md-icon>
+            <p>{{ vm.resume.basics.website }}</p>
+          </md-list-item>
+          <md-list-item class="md-clickable"
+                        ng-click="vm.contactWith(city)">
+            <md-icon class="material-icons">&#xE55F;</md-icon>
+            <p>{{ vm.resume.basics.location.city }}, {{ vm.resume.basics.location.region }}</p>
+          </md-list-item>
+
+          <md-divider></md-divider>
+
+          <md-subheader>Download Résumé</md-subheader>
+          <md-list-item class="md-clickable"
+                        ng-repeat="drive in vm.resume.drives"
+                        ng-click="vm.navigateTo(drive.link)">
+            <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
+            <!--<img ng-src"{{ drive.icon }}" class="md-avatar">-->
+            <p>{{ drive.label }}</p>
+          </md-list-item>
+        </md-list>
+      </md-content>
+
+      <md-toolbar class="md-accent md-hue-3">
+        <div class="md-toolbar-tools">
+          <span flex></span>
+          <md-button ng-repeat-start="profile in vm.resume.basics.profiles"
+                     class="md-icon-button"
+                     ng-href="{{ profile.url }}">
+            <md-icon md-svg-icon="{{ profile.network | lowercase }}"
+                     style="color: #fff;">
+            </md-icon>
+          </md-button>
+          <span flex ng-if="!$last" ng-repeat-end></span>
+          <span flex></span>
+        </div>
+      </md-toolbar>
+
+    </md-sidenav>
+    
+    <div layout="column"
+         tabIndex="-1"
+         role="main"
+         flex>
+
+      <md-toolbar class="md-hue-3 md-whiteframe-z1">
+        <div class="md-toolbar-tools">
+          <span flex></span>
+        </div>
+      </md-toolbar>
+
+      <md-content id="content" 
+                  class="shell"
+                  md-scroll-y 
+                  flex
+                  ui-view
+                  layout-padding>
+      </md-content>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

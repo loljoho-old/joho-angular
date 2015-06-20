@@ -4,7 +4,7 @@
 angular.module('johoApp', [
     'johoApp.core',
     'johoApp.resume',
-    'johoApp.pdf'
+    'johoApp.jsonresume'
   ]);
 
 })();

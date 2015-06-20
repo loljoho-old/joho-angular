@@ -1,0 +1,59 @@
+<section id="summary">
+  
+  <md-content class="md-whiteframe-z3 md-padding md-margin">
+
+    <p><strong>Front-End Developer</strong> with Back-End experience and Computer Science and Information Technology backgrounds. Specialties include: <strong>Node.js, AngularJS</strong> and <strong>MVC Frameworks</strong>; <strong>REST API</strong> development and integration; and <strong>Cross-Platform, Mobile-Friendly, Responsive Web Design.</strong></p>
+
+    <p>Sociable and detail-oriented team player with a passion for continuous learning and self-improvement. Values business and interpersonal relationships; enjoys the challenge of exploring the potential of new technologies.  Likes people.  Allergic to cats.</p>
+
+  </md-content>
+
+
+</section>
+
+
+<section id="expertise">
+  <md-content class="md-whiteframe-z3 md-padding md-margin">
+    <md-list>
+      <md-subheader>Areas of Expertise</md-subheader>
+      <md-list-item class="md-2-line" 
+                    ng-repeat="area in sm.resume.expertise">
+        <img ng-src="{{ area.icon }}" 
+             class="md-avatar">
+        <div class="md-list-item-text">
+          <h3>{{ area.name }}</h3>
+          <md-progress-linear class="md-accent" 
+                              md-mode="determinate" 
+                              value="{{ area.level }}">
+          </md-progress-linear>
+        </div>        
+      </md-list-item>
+    </md-list>
+  </md-content>
+</section>
+
+
+<section id="skills">
+
+</section>
+
+
+<section id="projects">
+
+</section>
+
+
+<section id="work">
+
+</section>
+
+
+<section id="education">
+
+</section>
+  <!--
+    <md-list>
+      <md-divider></md-divider>
+      <md-subheader>Areas of Expertise</md-subheader>
+    </md-list>
+  -->
